@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gocashback.lib_common.widget.GcbSearchView
+        android:id="@+id/gcb_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sv_show_message="true">
+
+    </com.gocashback.lib_common.widget.GcbSearchView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rycv_store_cate"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcb_search_view">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:background="@color/greyEEEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rycv_store_cate"
+        app:layout_constraintTop_toBottomOf="@+id/gcb_search_view" />
+
+    <TextView
+        android:id="@+id/tv_cate_default"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/store_cate_order_btn_bg"
+        android:gravity="center"
+        android:text="@string/store_cate_default"
+        android:textColor="@color/store_cate_order_text"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/view_line"
+        app:layout_constraintTop_toBottomOf="@+id/gcb_search_view" />
+
+    <TextView
+        android:id="@+id/tv_cate_cash_back"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/store_cate_order_btn_bg"
+        android:gravity="center"
+        android:text="@string/store_cate_cash_back"
+        android:textColor="@color/store_cate_order_text"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_cate_default"
+        app:layout_constraintTop_toBottomOf="@+id/gcb_search_view" />
+
+    <TextView
+        android:id="@+id/tv_cate_hot"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/store_cate_order_btn_bg"
+        android:gravity="center"
+        android:text="@string/store_cate_hot"
+        android:textColor="@color/store_cate_order_text"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_cate_cash_back"
+        app:layout_constraintTop_toBottomOf="@+id/gcb_search_view" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rycv_store_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_line"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cate_default"
+        android:layout_marginTop="4dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        style="@style/CommonTabUnderShadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcb_search_view" />
+
+</android.support.constraint.ConstraintLayout>

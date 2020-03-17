@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.gocashback.lib_common.widget.GcbSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sv_editable="true"
+        app:sv_show_cancel="true">
+
+    </com.gocashback.lib_common.widget.GcbSearchView>
+
+    <!--历史记录和商家返利-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clyt_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/history_search"
+            android:textColor="@color/grey333333"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tflyt_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_search_history">
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+        <android.support.constraint.Group
+            android:id="@+id/group_search_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_search_history,tflyt_search_history" />
+
+        <TextView
+            android:id="@+id/tv_store_cash_back"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/store"
+            android:textColor="@color/grey333333"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tflyt_search_history" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_change"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:drawableLeft="@mipmap/ic_change"-->
+        <!--android:drawablePadding="6dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingRight="16dp"-->
+        <!--android:text="@string/change"-->
+        <!--android:textColor="@color/grey666666"-->
+        <!--android:textSize="14sp"-->
+        <!--android:visibility="gone"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tflyt_search_history" />-->
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tflyt_store_cash_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_store_cash_back">
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+        <android.support.constraint.Group
+            android:id="@+id/group_search_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_store_cash_back,tflyt_store_cash_back" />
+
+        <View
+            style="@style/CommonTabUnderShadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--模糊匹配-->
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rycv_search_filter"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <!--搜索结果展示-->
+    <RelativeLayout
+        android:id="@+id/rlyt_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable">
+
+        </android.support.design.widget.TabLayout>
+
+        <com.gocashback.lib_common.widget.GcbViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tablayout">
+
+        </com.gocashback.lib_common.widget.GcbViewPager>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rycv_search_result"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+        <!--无结果状态-->
+        <View style="@style/CommonTabUnderShadow" />
+
+    </RelativeLayout>
+</LinearLayout>

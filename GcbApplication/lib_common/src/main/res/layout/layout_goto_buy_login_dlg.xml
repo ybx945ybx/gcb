@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_white_corner_6"
+    android:paddingBottom="26dp">
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/ic_go_buy_dlg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/go_buy_dlg_title_1"
+        android:textColor="@color/grey333333"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_top" />
+
+    <TextView
+        android:id="@+id/tv_store"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        tools:text="Cult Beauty"
+        android:gravity="center"
+        android:textColor="@color/grey333333"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+    <LinearLayout
+        android:id="@+id/llyt_rebate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_store">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/go_buy_dlg_title_2"
+            android:textColor="@color/grey333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_rebate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="8.0%"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/redFF4E4E"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/go_buy_dlg_title_3"
+            android:textColor="@color/grey333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/ButtonCornerRed"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/go_buy_dlg_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llyt_rebate" />
+
+    <TextView
+        android:id="@+id/tv_not_login"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_grayefefef_corner_4"
+        android:text="@string/go_buy_dlg_not_login"
+        android:textColor="@color/grey333333"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/gift_cards_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_line_bottom"
+        app:layout_constraintTop_toBottomOf="@id/gcbHeadView">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:paddingBottom="22dp">
+
+            <!--image-->
+            <com.gocashback.lib_common.widget.GcbImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="16dp"
+                app:layout_constraintDimensionRatio="343:188"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--reward_name-->
+            <TextView
+                android:id="@+id/tv_reward_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/grey333333"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_img"
+                tools:text="App Store  iTunes Gift Card $20.00" />
+
+            <!--discount-->
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/redFF4E4E"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_reward_name"
+                tools:text="Save Extra 1%" />
+
+            <!--description-->
+            <LinearLayout
+                android:id="@+id/clyt_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_discount">
+
+                <TextView
+                    android:id="@+id/tv_description_simple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="3dp"
+                    android:maxLines="5"
+                    android:textColor="@color/grey666666"
+                    android:textSize="13sp"
+                    tools:text="tv_discounttv_discounttv_tv_discounttv_discounttv_discountdiscountThe Hotels.com Gift Card is redeemable towards bookings at hundreds of thousands of places to stay in 200 countries and territories, ranging from international chains and all-inclusive resorts to local favorites and bed  breakfasts. Redeemable at on Hotels…" />
+
+                <TextView
+                    android:id="@+id/tv_description_whole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/grey666666"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    tools:text="tv_discounttv_discounttv_iscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discoiscounttv_tv_discounttv_discotv_discounttv_discounttv_discountdiscountThe Hotels.com Gift Card is redeemable towards bookings at hundreds of thousands of places to stay in 200 countries and territories, ranging from international chains and all-inclusive resorts to local favorites and bed  breakfasts. Redeemable at on Hotels…" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:src="@mipmap/ic_more_down" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/greyF5F5F5"
+                app:layout_constraintTop_toBottomOf="@+id/clyt_description" />
+
+            <!--Amount Selected-->
+            <TextView
+                android:id="@+id/tv_amount_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/gift_cards_detail_amount_selected"
+                android:textColor="@color/grey333333"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rycv_amount_selected"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_amount_selected">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <EditText
+                android:id="@+id/et_amount_selected"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_greybababa_corner_4_stroke"
+                android:gravity="center_vertical"
+                android:hint="@string/gift_cards_detail_enter_amount"
+                android:inputType="numberDecimal"
+                android:paddingLeft="14dp"
+                android:textColor="@color/grey333333"
+                android:textColorHint="@color/greyCCCCCC"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_amount_selected" />
+
+            <TextView
+                android:id="@+id/tv_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="$"
+                android:textColor="@color/grey333333"
+                android:textColorHint="@color/greyCCCCCC"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/et_amount_selected"
+                app:layout_constraintTop_toTopOf="@+id/et_amount_selected" />
+
+            <TextView
+                android:id="@+id/tv_available_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:text="@string/gift_cards_detail_available"
+                android:textColor="@color/grey333333"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_available"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_amount_selected" />
+
+            <TextView
+                android:id="@+id/tv_available"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/redFF4E4E"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_amount_selected"
+                tools:text="$20222.22" />
+
+            <TextView
+                android:id="@+id/tv_get_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/gift_cards_detail_get"
+                android:textColor="@color/grey333333"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_get"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_available_title" />
+
+            <TextView
+                android:id="@+id/tv_get"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/redFF4E4E"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_available_title"
+                tools:text="$20222.22" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/view_line_bottom"
+        style="@style/Divider_List_E6E6E6"
+        app:layout_constraintBottom_toTopOf="@+id/tv_redeem_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_redeem_now"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_redemption_amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gift_cards_detail_redemption_amount"
+            android:textColor="@color/grey212121"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_redemption_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_redemption_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/redFF4E4E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_redemption_amount_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_redeem_now"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:background="@drawable/bg_redff4e4e"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/gift_cards_detail_redeem_now"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        style="@style/CommonTabUnderShadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+
+
+</android.support.constraint.ConstraintLayout>

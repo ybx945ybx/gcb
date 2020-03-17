@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tv_share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:text="@string/share_share"
+        android:textColor="@color/grey333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_share_close"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingStart="16dp"
+        android:src="@mipmap/ic_close"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_share_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_share_title" />
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/Divider_List_E6E6E6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_share_title" />
+
+    <TextView
+        android:id="@+id/tv_wx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_wx"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp"
+        android:text="@string/share_wx"
+        android:textColor="@color/grey212121"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_weibo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+    <TextView
+        android:id="@+id/tv_weibo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_weibo"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp"
+        android:text="@string/share_weibo"
+        android:textColor="@color/grey212121"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_wx_circle"
+        app:layout_constraintStart_toEndOf="@+id/tv_wx"
+        app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+    <TextView
+        android:id="@+id/tv_wx_circle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_wx_circle"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp"
+        android:text="@string/share_wx_circle"
+        android:textColor="@color/grey212121"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_qq"
+        app:layout_constraintStart_toEndOf="@+id/tv_weibo"
+        app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+    <TextView
+        android:id="@+id/tv_qq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_qq"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp"
+        android:text="@string/share_qq"
+        android:textColor="@color/grey212121"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_wx_circle"
+        app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+    <View
+        android:id="@+id/view_line_extra"
+        style="@style/Divider_List_E6E6E6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wx" />
+
+    <TextView
+        android:id="@+id/tv_fb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_fb"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp"
+        android:text="@string/share_fb"
+        android:textColor="@color/grey212121"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_tw"
+        app:layout_constraintStart_toStartOf="parent "
+        app:layout_constraintTop_toBottomOf="@+id/view_line_extra" />
+
+    <TextView
+        android:id="@+id/tv_tw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_twitter"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp"
+        android:text="@string/share_tw"
+        android:textColor="@color/grey212121"
+        android:visibility="gone"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_google"
+        app:layout_constraintStart_toEndOf="@+id/tv_fb"
+        app:layout_constraintTop_toBottomOf="@+id/view_line_extra" />
+
+    <TextView
+        android:id="@+id/tv_google"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_google"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp"
+        android:text="@string/share_google"
+        android:textColor="@color/grey212121"
+        android:visibility="gone"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_copy"
+        app:layout_constraintStart_toEndOf="@+id/tv_tw"
+        app:layout_constraintTop_toBottomOf="@+id/view_line_extra" />
+
+    <TextView
+        android:id="@+id/tv_copy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_copy_link"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp"
+        android:text="@string/share_copy"
+        android:textColor="@color/grey212121"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_wx"
+        app:layout_constraintStart_toStartOf="@+id/tv_wx"
+        app:layout_constraintTop_toBottomOf="@+id/view_line_extra" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="view_line_extra,tv_copy" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:padding="2dp"
+        android:text="·"
+        android:textColor="@color/grey333333"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_rebate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="4dp"
+        android:paddingTop="2dp"
+        android:text="·"
+        android:textColor="@color/grey333333"
+        android:layout_marginStart="2dp"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_start"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="add adsdsdd   add adsdsdd   dsdsdsd ddddddadd adsdsdd   dsdsdsd ddddddadd adsdsdd   dsdsdsd dddddddsdsdsd dddddd" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/store_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <com.gocashback.lib_common.widget.MultipleStatusView
+        android:id="@+id/msv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/view_line_bottom"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--store-->
+
+                    <com.gocashback.lib_common.widget.GcbImageView
+                        android:id="@+id/iv_store_cover"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/stroke_grayeeeeee_corner_4"
+                        android:padding="1dp"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_store_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/grey212121"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_store_cash_back"
+                        app:layout_constraintStart_toEndOf="@+id/iv_store_cover"
+                        tools:text="Eyeconic" />
+
+                    <com.gocashback.lib_common.widget.GcbImageView
+                        android:id="@+id/iv_store_country"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_store_name"
+                        app:layout_constraintStart_toEndOf="@+id/iv_store_cover"
+                        app:layout_constraintTop_toTopOf="@+id/tv_store_name" />
+
+                    <TextView
+                        android:id="@+id/tv_store_cash_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/redFF4E4E"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_store_cover"
+                        app:layout_constraintStart_toEndOf="@+id/iv_store_cover"
+                        app:layout_constraintTop_toTopOf="@+id/iv_store_cover"
+                        tools:text="返利5.0%" />
+
+                    <TextView
+                        android:id="@+id/tv_store_favourites"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/grey999999"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/iv_store_cover"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_store_cash_back"
+                        tools:text="323人收藏" />
+
+                    <View
+                        android:id="@+id/view_line_1"
+                        style="@style/Divider_List_E6E6E6_16dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_store_cover" />
+
+                    <!--description-->
+                    <LinearLayout
+                        android:id="@+id/llyt_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view_line_1">
+
+                        <TextView
+                            android:id="@+id/tv_description_simple"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="3dp"
+                            android:maxLines="2"
+                            android:textColor="@color/grey666666"
+                            android:textSize="12sp"
+                            android:visibility="visible"
+                            tools:text="健安喜GNC，全名是General Nutrition Center（通用营养中心），美国顶级保健品。GNC是全球闻名的优良营司，以其成分的安全性及产品的能效性为健康营养行业提供了标准。专业生产各种维生素、矿物质、植物精华以及其它保健营养食品，产品遍" />
+
+                        <TextView
+                            android:id="@+id/tv_description_whole"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="3dp"
+                            android:textColor="@color/grey666666"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            tools:text="健安喜GNC，全名是General Nutrition Center（通用营养中心），美国顶级保健品。GNC是全球闻名的优良营司，以其成分的安全性及产品的能效性为健康营养行业提供了标准。专业生产各种维生素、矿物质、植物精华以及其它保健营养食品，产品遍" />
+
+                        <ImageView
+                            android:id="@+id/iv_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="8dp"
+                            android:src="@mipmap/ic_more_down" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_line_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/greyF5F5F5"
+                        app:layout_constraintTop_toBottomOf="@+id/llyt_description" />
+
+                    <!--特殊返利分类-->
+                    <TextView
+                        android:id="@+id/tv_cash_back_categories_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:text="@string/store_detail_cash_back_categories"
+                        android:textColor="@color/grey333333"
+                        android:textSize="16sp"
+                        app:layout_constraintTop_toBottomOf="@+id/view_line_2" />
+
+                    <TextView
+                        android:id="@+id/tv_cate"
+                        android:layout_width="0dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/redFFEEEE"
+                        android:gravity="center_vertical"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="8dp"
+                        android:text="@string/store_detail_categories"
+                        android:textColor="@color/grey333333"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_cate_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_cash_back_categories_title" />
+
+                    <TextView
+                        android:id="@+id/tv_cate_value"
+                        android:layout_width="116dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/redFFEEEE"
+                        android:gravity="center_vertical"
+                        android:text="@string/store_detail_cash_back"
+                        android:textColor="@color/redFF4E4E"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tv_cate"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_cash_back_categories_title" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rycv_cash_back_categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_cate">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <View
+                        android:id="@+id/view_line_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/greyF5F5F5"
+                        app:layout_constraintTop_toBottomOf="@+id/rycv_cash_back_categories" />
+
+                    <android.support.constraint.Group
+                        android:id="@+id/group_categories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:constraint_referenced_ids="tv_cash_back_categories_title,tv_cate,tv_cate_value,rycv_cash_back_categories,rycv_cash_back_categories,view_line_3" />
+
+                    <!--返利说明-->
+                    <TextView
+                        android:id="@+id/tv_cash_back_explain_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:text="@string/store_detail_cash_back_terms"
+                        android:textColor="@color/grey333333"
+                        android:textSize="16sp"
+                        app:layout_constraintTop_toBottomOf="@+id/view_line_3" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_cash_back_explain"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:lineSpacingExtra="3dp"-->
+<!--                        android:textColor="@color/grey333333"-->
+<!--                        android:textSize="13sp"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/tv_cash_back_explain_title"-->
+<!--                        tools:text="· 使用礼品卡支付以及使用未授权优惠码无法获得返利" />-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rycv_cash_back_explain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_cash_back_explain_title"/>
+
+                    <View
+                        android:id="@+id/view_line_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/greyF5F5F5"
+                        app:layout_constraintTop_toBottomOf="@+id/rycv_cash_back_explain" />
+
+                    <android.support.constraint.Group
+                        android:id="@+id/group_rebate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:constraint_referenced_ids="view_line_4,rycv_cash_back_explain,tv_cash_back_explain_title" />
+                    <!--相关优惠-->
+                    <TextView
+                        android:id="@+id/tv_cash_back_deals_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:text="@string/store_detail_eyeconic_deals"
+                        android:textColor="@color/grey333333"
+                        android:textSize="16sp"
+                        app:layout_constraintTop_toBottomOf="@+id/view_line_4" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rycv_eyeconic_deals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_cash_back_deals_title">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <android.support.constraint.Group
+                        android:id="@+id/group_deals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:constraint_referenced_ids="tv_cash_back_deals_title,rycv_eyeconic_deals " />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <View
+                android:id="@+id/view_line_bottom"
+                style="@style/Divider_List_E6E6E6"
+                app:layout_constraintBottom_toTopOf="@+id/tv_shop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_shop"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_store_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ic_share"
+                    android:gravity="center"
+                    android:text="@string/store_detail_share"
+                    android:textColor="@color/grey3C3C3C"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_store_save"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_store_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/sl_collect"
+                    android:gravity="center"
+                    android:text="@string/store_detail_collect"
+                    android:textColor="@color/grey3C3C3C"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_store_share"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_shop"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_redff4e4e"
+                android:gravity="center"
+                android:minWidth="167dp"
+                android:padding="16dp"
+                android:text="@string/store_detail_shop"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </com.gocashback.lib_common.widget.MultipleStatusView>
+
+    <View
+        style="@style/CommonTabUnderShadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+
+
+</android.support.constraint.ConstraintLayout>

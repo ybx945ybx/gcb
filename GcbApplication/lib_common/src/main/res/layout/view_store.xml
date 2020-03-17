@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.gocashback.lib_common.widget.GcbImageView
+            android:id="@+id/iv_store_cover"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/stroke_grayeeeeee_corner_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/grey212121"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_store_cash_back"
+            app:layout_constraintLeft_toRightOf="@+id/iv_store_cover"
+            tools:text="Eyeconic" />
+
+        <com.gocashback.lib_common.widget.GcbImageView
+            android:id="@+id/iv_store_country"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_store_name"
+            app:layout_constraintLeft_toRightOf="@+id/iv_store_cover"
+            app:layout_constraintTop_toTopOf="@+id/tv_store_name" />
+
+        <TextView
+            android:id="@+id/tv_store_cash_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/redFF4E4E"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/iv_store_cover"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="返利5.0%" />
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_store_country"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:textColor="@color/grey999999"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/iv_store_country"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/iv_store_country"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/iv_store_country"-->
+        <!--tools:text="美国" />-->
+
+        <!--<ImageViewView-->
+        <!--android:id="@+id/iv_store_collect"-->
+        <!--android:layout_width="12dp"-->
+        <!--android:layout_height="12dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/iv_store_country"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/tv_store_country"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/iv_store_country" />-->
+
+        <TextView
+            android:id="@+id/tv_store_favourites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey999999"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@+id/iv_store_cover"
+            app:layout_constraintTop_toBottomOf="@+id/tv_store_cash_back"
+            tools:text="323人收藏" />
+
+        <!--<android.support.constraint.Group-->
+        <!--android:id="@+id/group_collect"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:constraint_referenced_ids="iv_store_collect,tv_store_collect" />-->
+
+        <com.gocashback.lib_common.widget.GcbGoBuyView
+            android:id="@+id/tv_go_shop"
+            android:layout_width="64dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+</merge>

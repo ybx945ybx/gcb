@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/settings_change_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <com.gocashback.lib_common.widget.GcbLoginEditView
+        android:id="@+id/et_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/payment_password_enter_old_hint"
+        android:minHeight="56dp"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:textColor="@color/grey333333"
+        android:textColorHint="@color/greyCCCCCC"
+        android:textSize="14sp"
+        app:glev_change_under_line="false"
+        app:glev_show_password_ic="true"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+
+    <View
+        android:id="@+id/view_line_old"
+        style="@style/Divider_List_E6E6E6_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/et_old" />
+
+    <com.gocashback.lib_common.widget.GcbLoginEditView
+        android:id="@+id/et_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/payment_password_enter_hint"
+        android:minHeight="56dp"
+        android:paddingStart="16dp"
+        android:inputType="textPassword"
+        android:textColor="@color/grey333333"
+        android:textColorHint="@color/greyCCCCCC"
+        android:textSize="14sp"
+        app:glev_change_under_line="false"
+        app:glev_show_password_ic="true"
+        app:layout_constraintTop_toBottomOf="@+id/view_line_old" />
+
+    <View
+        android:id="@+id/view_line_mail"
+        style="@style/Divider_List_E6E6E6_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/et_new" />
+
+    <com.gocashback.lib_common.widget.GcbLoginEditView
+        android:id="@+id/et_new_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/payment_password_confirm_hint"
+        android:minHeight="56dp"
+        android:paddingStart="16dp"
+        android:textColor="@color/grey333333"
+        android:inputType="textPassword"
+        android:textColorHint="@color/greyCCCCCC"
+        android:textSize="14sp"
+        app:glev_change_under_line="false"
+        app:glev_show_password_ic="true"
+        app:layout_constraintTop_toBottomOf="@+id/view_line_mail" />
+
+    <View
+        android:id="@+id/view_line_code"
+        style="@style/Divider_List_E6E6E6_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/et_new_confirm" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/ButtonCornerRed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:enabled="false"
+        android:text="@string/edit_payment_method_submit"
+        app:layout_constraintTop_toBottomOf="@+id/view_line_code" />
+
+</android.support.constraint.ConstraintLayout>

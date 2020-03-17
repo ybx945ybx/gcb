@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/loading_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/img_loading"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginBottom="60dp"/>
+
+</LinearLayout>

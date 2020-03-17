@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@mipmap/ic_check_pwd_focused"/>
+    <item android:state_selected="false" android:drawable="@mipmap/ic_check_pwd_unfocused"/>
+    <item  android:drawable="@mipmap/ic_check_pwd_unfocused"/>
+</selector>

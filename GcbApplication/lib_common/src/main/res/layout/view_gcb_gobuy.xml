@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_go_buy"
+    android:layout_width="64dp"
+    android:layout_height="30dp"
+    android:textColor="@color/sl_white_666666"
+    android:textSize="14sp"
+    android:background="@drawable/sl_gobuy_bg"
+    android:gravity="center"
+    android:text="Shop" />

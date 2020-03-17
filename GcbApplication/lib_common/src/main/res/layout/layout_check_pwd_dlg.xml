@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner_6"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:text="@string/check_pwd_dlg_title"
+        android:textColor="@color/grey1D1D1F"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/check_pwd_dlg_message"
+        android:textColor="@color/grey333333"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/llyt_pwd"
+            android:layout_alignRight="@+id/llyt_pwd"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/corner_cursor"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llyt_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sl_focus_bg"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/sl_focus_bg"
+                android:gravity="center"  />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/sl_focus_bg"
+                android:gravity="center"  />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/sl_focus_bg"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/sl_focus_bg"
+                android:gravity="center"  />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/sl_focus_bg"
+                android:gravity="center"  />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:paddingEnd="16dp"
+        android:text="@string/check_pwd_dlg_forget"
+        android:textColor="@color/redFF4E4E"
+        android:textSize="12sp" />
+</LinearLayout>

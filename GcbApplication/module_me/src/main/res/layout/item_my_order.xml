@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <com.gocashback.lib_common.widget.GcbImageView
+        android:id="@+id/iv_store_cover"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/stroke_grayeeeeee"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_store_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/grey1D1D1F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_store_cover"
+        app:layout_constraintTop_toTopOf="@+id/iv_store_cover"
+        tools:text="Amazon" />
+
+    <TextView
+        android:id="@+id/tv_order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/grey78787D"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_rebate_title"
+        app:layout_constraintStart_toEndOf="@+id/iv_store_cover"
+        app:layout_constraintTop_toBottomOf="@+id/tv_store_name"
+        tools:text="2019-1-22 12:22:30" />
+
+    <TextView
+        android:id="@+id/tv_order_rebate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/my_orders_rebate"
+        android:textColor="@color/redFF4E4E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_amount"
+        app:layout_constraintStart_toEndOf="@+id/iv_store_cover"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_date" />
+
+    <TextView
+        android:id="@+id/tv_order_rebate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/redFF4E4E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_amount"
+        app:layout_constraintStart_toEndOf="@+id/tv_order_rebate_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_date"
+        tools:text="$23" />
+
+    <TextView
+        android:id="@+id/tv_order_amount_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/my_orders_amount"
+        android:textColor="@color/grey78787D"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_store_cover"
+        app:layout_constraintStart_toEndOf="@+id/iv_store_cover"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_rebate_title" />
+
+    <TextView
+        android:id="@+id/tv_order_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/grey78787D"
+
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_store_cover"
+        app:layout_constraintStart_toEndOf="@+id/tv_order_amount_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_rebate"
+        tools:text="$1283" />
+
+    <com.gocashback.lib_common.widget.GcbStatusView
+        android:id="@+id/gsv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/ic_right_offset_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        style="@style/Divider_List_E6E6E6_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

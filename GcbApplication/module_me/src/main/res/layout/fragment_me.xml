@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--登录-->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:background="@mipmap/ic_me_top_bg">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="48dp"
+                android:src="@mipmap/ic_head_default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_go_login"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/sign_up_login"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/arrow"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+                app:layout_constraintStart_toEndOf="@+id/iv_head"
+                app:layout_constraintTop_toTopOf="@+id/iv_head" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+                app:layout_constraintStart_toEndOf="@+id/iv_head"
+                app:layout_constraintTop_toTopOf="@+id/iv_head"
+                tools:text="@string/sign_up_login" />
+
+            <TextView
+                android:id="@+id/tv_cash_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:textColor="@color/yellowF4C87F"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/my_cash"
+                app:layout_constraintEnd_toStartOf="@+id/arrow"
+                app:layout_constraintTop_toTopOf="@+id/iv_head"
+                tools:text="$55.76" />
+
+            <TextView
+                android:id="@+id/my_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/me_my_rebate"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+                app:layout_constraintEnd_toStartOf="@+id/arrow"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cash_count" />
+
+            <android.support.constraint.Group
+                android:id="@+id/group_my_rebate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="tv_cash_count,my_cash" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@mipmap/ic_me_fragment_right_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/iv_head" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!--邀请好友-->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="14dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/iv_invite"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="343:80"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <!--我的item版块-->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 我的返利 -->
+            <TextView
+                android:id="@+id/tvRebate"
+                style="@style/me_fragment_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@mipmap/ic_me_rebate"
+                android:text="@string/me_my_rebate"
+                app:layout_constraintEnd_toStartOf="@+id/tvOrder"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 我的订单 -->
+            <TextView
+                android:id="@+id/tvOrder"
+                style="@style/me_fragment_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@mipmap/ic_me_order"
+                android:text="@string/me_my_order"
+                app:layout_constraintEnd_toStartOf="@+id/tvFindOrder"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvRebate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 找回订单 -->
+            <TextView
+                android:id="@+id/tvFindOrder"
+                style="@style/me_fragment_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@mipmap/ic_me_find_order"
+                android:text="@string/me_my_find_order"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvOrder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 申请提现 -->
+            <TextView
+                android:id="@+id/tvWithdraw"
+                style="@style/me_fragment_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@mipmap/ic_me_withdraw"
+                android:text="@string/me_my_withdow"
+                app:layout_constraintEnd_toStartOf="@+id/tvWithdrawRecord"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRebate" />
+
+            <!-- 提现记录 -->
+            <TextView
+                android:id="@+id/tvWithdrawRecord"
+                style="@style/me_fragment_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@mipmap/ic_me_withdraw_record"
+                android:text="@string/me_my_withdow_record"
+                app:layout_constraintEnd_toStartOf="@+id/tvGiftCard"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvWithdraw"
+                app:layout_constraintTop_toTopOf="@+id/tvWithdraw" />
+
+            <!-- 我的礼品卡 -->
+            <TextView
+                android:id="@+id/tvGiftCard"
+                style="@style/me_fragment_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@mipmap/ic_me_gift_card"
+                android:text="@string/me_my_gift_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvWithdrawRecord"
+                app:layout_constraintTop_toTopOf="@+id/tvWithdraw" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!--我的收藏-->
+        <com.gocashback.lib_common.widget.GcbMeFragmentItemTextView
+            android:id="@+id/gmfitv_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:gmfitv_img="@mipmap/ic_me_collect"
+            app:gmfitv_title="@string/me_collect">
+
+        </com.gocashback.lib_common.widget.GcbMeFragmentItemTextView>
+
+        <!--浏览记录-->
+        <com.gocashback.lib_common.widget.GcbMeFragmentItemTextView
+            android:id="@+id/gmfitv_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gmfitv_img="@mipmap/ic_record"
+            app:gmfitv_title="@string/me_record">
+
+        </com.gocashback.lib_common.widget.GcbMeFragmentItemTextView>
+
+        <!--邀请赚钱-->
+        <com.gocashback.lib_common.widget.GcbMeFragmentItemTextView
+            android:id="@+id/gmfitv_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gmfitv_img="@mipmap/ic_invite"
+            app:gmfitv_title="@string/me_invite">
+
+        </com.gocashback.lib_common.widget.GcbMeFragmentItemTextView>
+
+        <!--消息中心-->
+        <com.gocashback.lib_common.widget.GcbMeFragmentItemTextView
+            android:id="@+id/gmfitv_message_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gmfitv_img="@mipmap/ic_me_message"
+            app:gmfitv_title="@string/me_message_center">
+
+        </com.gocashback.lib_common.widget.GcbMeFragmentItemTextView>
+
+        <!--帮助中心-->
+        <com.gocashback.lib_common.widget.GcbMeFragmentItemTextView
+            android:id="@+id/gmfitv_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gmfitv_img="@mipmap/ic_help"
+            app:gmfitv_title="@string/me_help">
+
+        </com.gocashback.lib_common.widget.GcbMeFragmentItemTextView>
+
+        <!--设置-->
+        <com.gocashback.lib_common.widget.GcbMeFragmentItemTextView
+            android:id="@+id/gmfitv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gmfitv_img="@mipmap/ic_setting"
+            app:gmfitv_title="@string/me_setting">
+
+        </com.gocashback.lib_common.widget.GcbMeFragmentItemTextView>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

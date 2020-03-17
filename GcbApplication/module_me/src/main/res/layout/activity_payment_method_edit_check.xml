@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/edit_payment_method"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="42dp">
+
+            <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+                android:id="@+id/gpmev_check_first"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_payment_method_check_first_hint"
+                app:gpmev_title_text="@string/edit_payment_method_check_first"
+                app:layout_constraintEnd_toStartOf="@+id/gpmev_check_last"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+            <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+                android:id="@+id/gpmev_check_last"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_payment_method_check_last_hint"
+                app:gpmev_title_text="@string/edit_payment_method_check_last"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gpmev_check_first"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+            <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+                android:id="@+id/gpmev_check_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="@string/edit_payment_method_check_street_hint"
+                app:gpmev_title_text="@string/edit_payment_method_check_street"
+                app:layout_constraintTop_toBottomOf="@+id/gpmev_check_first">
+
+            </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+            <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+                android:id="@+id/gpmev_check_street_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="@string/edit_payment_method_check_street_hint"
+                app:layout_constraintTop_toBottomOf="@+id/gpmev_check_street">
+
+            </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+            <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+                android:id="@+id/gpmev_check_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="@string/edit_payment_method_check_city_hint"
+                app:gpmev_title_text="@string/edit_payment_method_check_city"
+                app:layout_constraintTop_toBottomOf="@+id/gpmev_check_street_two">
+
+            </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+            <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+                android:id="@+id/gpmev_check_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="@string/edit_payment_method_check_state_hint"
+                app:gpmev_title_text="@string/edit_payment_method_check_state"
+                app:layout_constraintTop_toBottomOf="@+id/gpmev_check_city">
+
+            </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+            <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+                android:id="@+id/gpmev_check_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="@string/edit_payment_method_check_zipcode_hint"
+                app:gpmev_title_text="@string/edit_payment_method_check_zipcode"
+                app:layout_constraintTop_toBottomOf="@+id/gpmev_check_state">
+
+            </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                style="@style/ButtonCornerRed"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:enabled="false"
+                android:text="@string/edit_payment_method_submit"
+                app:layout_constraintTop_toBottomOf="@+id/gpmev_check_zipcode" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        style="@style/CommonTabUnderShadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+</android.support.constraint.ConstraintLayout>

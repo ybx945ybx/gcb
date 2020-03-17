@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/ic_gift_card_bg" android:state_enabled="true" />
+    <item android:drawable="@mipmap/ic_gift_card_spent_bg" android:state_enabled="false" />
+    <item android:drawable="@mipmap/ic_gift_card_bg" />
+</selector>

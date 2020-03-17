@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/withdraw_detail"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <com.gocashback.lib_common.widget.GcbSimpeInfoTextview
+        android:id="@+id/gsitv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gsitv_text="@string/withdraw_detail_date"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView">
+
+    </com.gocashback.lib_common.widget.GcbSimpeInfoTextview>
+
+    <com.gocashback.lib_common.widget.GcbSimpeInfoTextview
+        android:id="@+id/gsitv_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gsitv_text="@string/withdraw_detail_amount"
+        app:layout_constraintTop_toBottomOf="@+id/gsitv_date">
+
+    </com.gocashback.lib_common.widget.GcbSimpeInfoTextview>
+
+    <com.gocashback.lib_common.widget.GcbSimpeInfoTextview
+        android:id="@+id/gsitv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gsitv_text="@string/withdraw_detail_status"
+        app:layout_constraintTop_toBottomOf="@+id/gsitv_cash">
+
+    </com.gocashback.lib_common.widget.GcbSimpeInfoTextview>
+
+    <com.gocashback.lib_common.widget.GcbSimpeInfoTextview
+        android:id="@+id/gsitv_friend_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gsitv_text="@string/rebate_detail_friend_email_address"
+        app:layout_constraintTop_toBottomOf="@+id/gsitv_status"
+        android:visibility="gone">
+
+    </com.gocashback.lib_common.widget.GcbSimpeInfoTextview>
+
+    <com.gocashback.lib_common.widget.GcbSimpeInfoTextview
+        android:id="@+id/gsitv_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gsitv_text="@string/withdraw_detail_type"
+        app:layout_constraintTop_toBottomOf="@+id/gsitv_friend_email">
+
+    </com.gocashback.lib_common.widget.GcbSimpeInfoTextview>
+
+    <com.gocashback.lib_common.widget.GcbSimpeInfoTextview
+        android:id="@+id/gsitv_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gsitv_text="@string/withdraw_detail_payment_account"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/gsitv_type">
+
+    </com.gocashback.lib_common.widget.GcbSimpeInfoTextview>
+
+    <View
+        style="@style/CommonTabUnderShadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+
+</android.support.constraint.ConstraintLayout>

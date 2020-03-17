@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gocashback.module_me">
+
+    <application>
+        <activity android:name=".activity.MyRebateActivity" />
+        <activity android:name=".activity.RebateDetailActivity" />
+        <activity android:name=".activity.MyOrderActivity" />
+        <activity android:name=".activity.OrderDetailActivity" />
+        <activity android:name=".activity.FindOrderActivity" />
+        <activity android:name=".activity.FindOrderDetailActivity" />
+        <activity android:name=".activity.FindOrderSubmitActivity" />
+        <activity android:name=".activity.FindOrderSelectStoreActivity" />
+        <activity android:name=".activity.WithdrawRecordActivity" />
+        <activity android:name=".activity.WithdrawRecorderDetailActivity" />
+        <activity android:name=".activity.HelpActivity" />
+        <activity android:name=".activity.HelpChildActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.MessageDetailActivity" />
+        <activity android:name=".activity.MyCollectionActivity" />
+        <activity android:name=".activity.ClickHistoryActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.PaymentMethodActivity" />
+        <activity android:name=".activity.PaymentMethodEditAliActivity" />
+        <activity android:name=".activity.PaymentMethodEditHeliActivity" />
+        <activity android:name=".activity.PaymentMethodEditCheckActivity" />
+        <activity android:name=".activity.PaymentMethodEditPaypalActivity" />
+        <activity android:name=".activity.PayPalAreaSelectActivity" />
+        <activity android:name=".activity.VerifyMailCodeActivity" />
+        <activity android:name=".activity.PaymentPasswordActivity" />
+        <activity android:name=".activity.GiftCardActivity" />
+        <activity android:name=".activity.RedeemGiftCardActivity" />
+        <activity android:name=".activity.UpdatePwdActivity" />
+        <activity android:name=".activity.WithdrawActivity" />
+        <activity android:name=".activity.InviteFriendActivity" />
+        <activity android:name=".activity.GiftCardDetailActivity"/>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.ForgetPasswordActivity" />
+        <activity android:name=".activity.SuccessActivity" />
+    </application>
+</manifest>

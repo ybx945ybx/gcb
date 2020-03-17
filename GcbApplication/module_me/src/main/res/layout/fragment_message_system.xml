@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gocashback.lib_common.widget.MultipleStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msv"
+    style="@style/MSV_BG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gocashback.lib_common.widget.GcbSwipeRefreshLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rycv_message_system"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:background="@color/white"
+            android:scrollbars="none" />
+    </com.gocashback.lib_common.widget.GcbSwipeRefreshLayout>
+
+</com.gocashback.lib_common.widget.MultipleStatusView>

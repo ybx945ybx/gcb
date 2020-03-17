@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/edit_payment_method"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+        android:id="@+id/gpmev_ali_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_payment_method_ali_name_hint"
+        app:gpmev_title_text="@string/edit_payment_method_ali_name"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView">
+
+    </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+    <com.gocashback.lib_common.widget.GcbPaymentMethodEditView
+        android:id="@+id/gpmev_ali_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/edit_payment_method_ali_account_hint"
+        app:gpmev_title_text="@string/edit_payment_method_ali_account"
+        app:layout_constraintTop_toBottomOf="@+id/gpmev_ali_name">
+
+    </com.gocashback.lib_common.widget.GcbPaymentMethodEditView>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/ButtonCornerRed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:text="@string/edit_payment_method_submit"
+        app:layout_constraintTop_toBottomOf="@+id/gpmev_ali_account" />
+
+    <View
+        style="@style/CommonTabUnderShadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+</android.support.constraint.ConstraintLayout>

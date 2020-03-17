@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_gift_cards_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/grey3C3C3C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mark_as_spent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_mark_as_spent"
+        tools:text="Amazon.com" />
+
+    <TextView
+        android:id="@+id/tv_mark_as_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/sl_gift_card_mask"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp"
+        android:text="@string/gift_cards_mark_as_spent"
+        android:textColor="@color/sl_enable_redff4e4e_999999"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clyt_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sl_gift_card_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="339:88"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mark_as_spent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.264" />
+
+        <TextView
+            android:id="@+id/tv_amount_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sl_redff4e4e_b8b8b8"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/clyt_content"
+            app:layout_constraintEnd_toStartOf="@+id/guide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clyt_content"
+            tools:text="$133.66" />
+
+        <TextView
+            android:id="@+id/tv_reward_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/sl_3c3c3c_b8b8b8"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/guide_hor"
+            app:layout_constraintEnd_toStartOf="@+id/iv_gift_card_spent"
+            app:layout_constraintStart_toEndOf="@+id/guide"
+            tools:text="$133.66" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_hor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tv_add_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="6dp"
+            android:textColor="@color/sl_999999_b8b8b8"
+            android:textSize="12sp"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@+id/guide"
+            app:layout_constraintTop_toBottomOf="@+id/guide_hor"
+            tools:text="$133.66" />
+        <!--app:layout_constraintEnd_toStartOf="@+id/iv_gift_card_spent"-->
+
+        <ImageView
+            android:id="@+id/iv_gift_card_spent"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="9dp"
+            android:src="@mipmap/ic_gift_card_spent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_gift_cards_resend"
+            style="@style/ButtonCircleRed"
+            android:layout_width="64dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="@string/gift_cards_resend"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Group
+            android:id="@+id/enable_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="clyt_content,tv_amount_bonus,tv_reward_name,tv_add_time" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

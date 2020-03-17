@@ -1,0 +1,525 @@
+<resources>
+    <string name="app_name">lib_common</string>
+    <string name="facebook_app_id">826414137465968</string>
+
+    <string name="search">搜索</string>
+    <string name="history_search">历史搜索</string>
+    <string name="change">换一换</string>
+    <string name="store">商家</string>
+    <string name="cancel">取消</string>
+    <string name="hot_store">热门商家</string>
+    <string name="view_more">查看更多</string>
+    <string name="view_all">查看全部</string>
+    <string name="discover">发现</string>
+
+    <string name="main_bottom_tab_home">首页</string>
+    <string name="main_bottom_tab_store">商家</string>
+    <string name="main_bottom_tab_discover">发现</string>
+    <string name="main_bottom_tab_me">我的</string>
+
+
+    <string name="msv_error_retry">刷新</string>
+    <string name="msv_empty_retry">刷新</string>
+
+    <string name="msv_empty_gift_card">兑换礼品卡</string>
+
+    <string name="msv_net_error">网络异常</string>
+    <string name="msv_no_result">暂无结果</string>
+    <string name="msv_no_content">暂无内容</string>
+    <string name="msv_no_orders">暂无订单</string>
+    <string name="msv_no_cash_back">暂无返利</string>
+    <string name="msv_no_payment_history">暂无提现</string>
+    <string name="msv_no_click_history">暂无浏览记录</string>
+    <string name="msv_no_favorites">暂无收藏</string>
+    <string name="msv_no_message">暂无消息</string>
+    <string name="msv_no_gift_card">暂无礼品卡</string>
+
+    <!--首页版块-->
+    <string name="home_tab_stores">商家</string>
+    <string name="home_tab_deals">优惠</string>
+    <string name="home_sub_title_recommend_store">推荐商家</string>
+    <string name="home_sub_title_favorite_store">收藏商家</string>
+    <string name="home_sub_title_hot_store">热门商家</string>
+    <string name="home_sub_title_popular_deal">人气优惠</string>
+    <string name="home_sub_title_hot_deal">热门优惠</string>
+    <string name="home_sub_title_recommend_deal">推荐优惠</string>
+
+    <string name="deal_cate_newest">最新优惠</string>
+
+    <string name="deal_detail">优惠详情</string>
+    <string name="deal_detail_code">折扣码</string>
+    <string name="deal_detail_code_copy">复制</string>
+    <string name="deal_detail_terms">返利说明</string>
+    <string name="deal_detail_related_stores">相关商家</string>
+    <string name="deal_detail_more_deals">更多优惠</string>
+    <string name="deal_detail_past_due">优惠已过期</string>
+    <string name="deal_expires">有效期:</string>
+
+    <!--商家分类版块-->
+    <string name="store_cate_default">默认</string>
+    <string name="store_cate_cash_back">返利</string>
+    <string name="store_cate_hot">热门</string>
+    <string name="store_collect"> 收藏</string>
+
+    <string name="store_detail">商家详情</string>
+    <string name="store_detail_cash_back_categories">特殊返利分类</string>
+    <string name="store_detail_categories">分类</string>
+    <string name="store_detail_cash_back">返利</string>
+    <string name="store_detail_cash_back_terms">返利说明</string>
+    <string name="store_detail_eyeconic_deals">相关优惠</string>
+    <string name="store_detail_share"> 分享</string>
+    <string name="store_detail_collect">收藏</string>
+    <string name="store_detail_shop">去购买，拿返利</string>
+
+    <string name="go_buy_transfer">正在跳转</string>
+    <string name="go_buy_tricking">正在跳转，请稍后</string>
+    <string name="go_buy_code_copied">折扣码已复制</string>
+    <string name="go_buy_how_to">如何返利</string>
+    <string name="go_buy_how_to_tis">正在跟踪您的浏览记录\n
+如果购物成功，您的返利将会在2-7天内显示账号</string>
+
+
+    <!--登录注册页面-->
+    <string name="sign_up">注册</string>
+    <string name="login">登录</string>
+    <string name="btn_register">注册</string>
+    <string name="btn_login">登录</string>
+    <string name="hint_email">输入您的邮箱</string>
+    <string name="hint_password">输入您的密码</string>
+    <string name="hint_vertification">输入验证码</string>
+    <string name="show_friend_code">好友邀请（好友将获得$%s奖励）</string>
+    <string name="hint_friend_code">好友邮箱/邀请码</string>
+    <string name="agree">我同意GoCashBack</string>
+    <string name="terms_conditions">服务条款</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="title_forget_password">忘记密码</string>
+    <string name="forget_password_submit">确定</string>
+    <string name="check_email">请查看您的邮箱</string>
+
+    <!--个人中心版块-->
+    <string name="sign_up_login">登录/注册</string>
+
+    <string name="me_my_rebate">我的返利</string>
+    <string name="me_my_order">我的订单</string>
+    <string name="me_my_find_order">找回订单</string>
+    <string name="me_my_withdow">申请提现</string>
+    <string name="me_my_withdow_record">提现记录</string>
+    <string name="me_my_gift_card">我的礼品卡</string>
+
+    <string name="me_collect">我的收藏</string>
+    <string name="me_record">浏览记录</string>
+    <string name="me_invite">邀请赚钱</string>
+    <string name="me_message_center">消息中心</string>
+    <string name="me_help">帮助中心</string>
+    <string name="me_setting">设置</string>
+
+    <string name="withdraw">提现</string>
+    <string name="withdraw_available">已生效</string>
+    <string name="withdraw_pending">未生效</string>
+
+    <!--状态标签-->
+    <string name="status_cash_pending">待生效</string>
+    <string name="status_cash_available">已生效</string>
+
+    <string name="status_order_pending">待生效</string>
+    <string name="status_order_available">已生效</string>
+
+    <string name="status_find_order_pending">待审核</string>
+    <string name="status_find_order_reviewing">待确认</string>
+    <string name="status_find_order_invalid">驳回</string>
+    <string name="status_find_order_added">已添加</string>
+    <string name="status_find_order_closed">关闭</string>
+
+    <string name="status_withdraw_processing">支付中</string>
+    <string name="status_withdraw_paid">已支取</string>
+    <string name="status_withdraw_failed">提现失败</string>
+
+    <!--返利类型-->
+    <string name="rebate_type_order">订单返利</string>
+    <string name="rebate_type_offline">线下奖励</string>
+    <string name="rebate_type_invite">邀请奖励</string>
+    <string name="rebate_type_friend_order">朋友订单返利</string>
+    <string name="rebate_type_activity">活动奖励</string>
+    <string name="rebate_type_register">注册奖励</string>
+
+    <string name="rebate_filter_status">状态</string>
+    <string name="rebate_filter_type">类型</string>
+    <string name="rebate_filter_all">全部</string>
+    <string name="rebate_filter_confirm">确认</string>
+
+    <string name="rebate_detail">返利详情</string>
+    <string name="rebate_detail_order_date">时间</string>
+    <string name="rebate_detail_cashback">金额</string>
+    <string name="rebate_detail_status">状态</string>
+    <string name="rebate_detail_friend_email_address">好友邮箱</string>
+    <string name="rebate_detail_type">类型</string>
+
+    <string name="my_orders">我的订单</string>
+    <string name="my_orders_tab_all">全部</string>
+    <string name="my_orders_tab_pending">待生效</string>
+    <string name="my_orders_tab_available">已生效</string>
+    <string name="my_orders_rebate">返利: </string>
+    <string name="my_orders_amount">消费: </string>
+    <!--订单-->
+    <string name="order_detail">订单详情</string>
+    <string name="order_detail_order_id">订单号</string>
+    <string name="order_detail_store">商家名称</string>
+    <string name="order_detail_amount">消费金额</string>
+    <string name="order_detail_cash_back">返利金额</string>
+    <string name="order_detail_date">下单时间</string>
+    <string name="order_detail_status">订单状态</string>
+
+    <string name="find_my_order">找回订单</string>
+    <string name="present_my_order">提交订单</string>
+    <string name="find_my_order_tab_all">全部</string>
+    <string name="find_my_order_tab_pending">待审核</string>
+    <string name="find_my_order_tab_reviewing">待确认</string>
+    <string name="find_my_order_tab_invaild">驳回</string>
+    <string name="find_my_order_tab_added">已添加</string>
+    <string name="find_my_order_tab_closed">关闭</string>
+
+
+    <string name="find_order_detail_date">提交时间</string>
+    <string name="find_order_detail_status">处理状态</string>
+
+    <string name="find_order_submit">找回订单</string>
+    <string name="find_order_submit_tips">告诉我们您的订单详情，我们将会在第一时间添加订单到您的账户。(添加完成后，订单将自动进入找回流程，仅支持手动添加90天以内的订单，当添加完成后，订单将自动进入流程)</string>
+    <string name="find_order_submit_store">商家:</string>
+    <string name="find_order_submit_store_hint">请选择商家</string>
+    <string name="find_order_submit_date">时间:</string>
+    <string name="find_order_submit_date_hint">请选择时间</string>
+    <string name="find_order_submit_order_id">订单号:</string>
+    <string name="find_order_submit_order_id_hint">请填写订单号</string>
+    <string name="find_order_submit_amount">订单金额:</string>
+    <string name="find_order_submit_amount_hint">请填写订单金额</string>
+    <string name="find_order_submit_screenshots">订单截图</string>
+    <string name="find_order_submit_screenshots_tips">截图需要包括交易时间、交易金额、订单号、商品明细</string>
+    <string name="find_order_submit_btn">提交</string>
+
+    <string name="find_order_submit_select_store">选择商家</string>
+
+    <!--申请提现-->
+    <string name="withdraw_gift_card">兑换礼品卡</string>
+    <string name="withdraw_payment_method">提现方式</string>
+    <string name="withdraw_payment_method_hint">请选择提现方式</string>
+    <string name="withdraw_payment_method_add">添加更多提现方式</string>
+    <string name="withdraw_payment_amount">提现金额</string>
+    <string name="withdraw_payable">可提现金额:</string>
+    <string name="withdraw_amount_tips">当已生效金额达到$%s，即可申请提现</string>
+    <string name="withdraw_amount_error_tips">提现金额需大于或等于$%s</string>
+    <string name="withdraw_payment_menthods">提现方式</string>
+    <string name="withdraw_bottom_recorder">提现记录</string>
+    <string name="withdraw_bottom_methods">管理提现账户</string>
+
+    <!--提现记录-->
+    <string name="withdraw_recorder">提现记录</string>
+    <string name="withdraw_recorder_item_title">提现金额</string>
+    <string name="withdraw_recorder_item_alipay">支付宝</string>
+    <string name="withdraw_recorder_item_check">支票</string>
+    <string name="withdraw_recorder_item_paypal">PayPal</string>
+    <string name="withdraw_recorder_item_gift">礼品卡</string>
+
+    <string name="withdraw_recorder_status_all">全部</string>
+    <string name="withdraw_recorder_status_processing">支付中</string>
+    <string name="withdraw_recorder_status_paid">已支取</string>
+    <string name="withdraw_recorder_status_failure">提取失败</string>
+
+    <string name="withdraw_recorder_type_all">全部</string>
+    <string name="withdraw_recorder_type_paypal">PayPal提现</string>
+    <string name="withdraw_recorder_type_check">支票提现</string>
+    <string name="withdraw_recorder_type_alipay">支付宝提现</string>
+    <string name="withdraw_recorder_type_gift">礼品卡提现</string>
+
+
+    <string name="withdraw_detail">提现详情</string>
+    <string name="withdraw_detail_date">时间</string>
+    <string name="withdraw_detail_amount">金额</string>
+    <string name="withdraw_detail_status">状态</string>
+    <string name="withdraw_detail_type">类型</string>
+    <string name="withdraw_detail_payment_account">提现账户</string>
+
+    <string name="help_center">帮助中心</string>
+    <string name="help_center_other_questions">其他问题</string>
+    <string name="help_center_email">邮件咨询</string>
+    <string name="help_center_feedback">私信反馈</string>
+    <string name="help_center_wx">添加微信</string>
+    <string name="help_center_add_friend">加微信好友</string>
+
+
+    <!--消息-->
+    <string name="message_center">消息</string>
+    <string name="message_tab_deal">优惠</string>
+    <string name="message_tab_system">系统</string>
+
+
+    <!--我的收藏-->
+    <string name="my_collection">我的收藏</string>
+    <string name="my_collection_tab_stores">商家</string>
+    <string name="my_collection_tab_deals">优惠</string>
+    <string name="my_collection_edit">编辑</string>
+    <string name="my_collection_cancel">取消</string>
+    <string name="my_collection_all">全部</string>
+    <string name="my_collection_delete">删除</string>
+
+    <!--浏览记录-->
+    <string name="click_history">浏览记录</string>
+    <string name="click_history_tab_stores">商家</string>
+    <string name="click_history_tab_deals">优惠</string>
+
+    <!--设置-->
+    <string name="settings">设置</string>
+    <string name="settings_payment_methods">支付方式</string>
+    <string name="settings_language">语言设置</string>
+    <string name="settings_change_password">更改密码</string>
+    <string name="settings_change_password_success">更改密码成功</string>
+    <string name="settings_payment_password">支付密码</string>
+    <string name="settings_bind_on_account">绑定账号</string>
+    <string name="settings_push_notifications">接收推送</string>
+    <string name="settings_about_us">关于我们</string>
+    <string name="settings_clear_cache">清除图片缓存</string>
+    <string name="settings_clear_cache_success">已清除</string>
+    <string name="settings_log_out">退出登录</string>
+    <string name="setting_logout_success">退出登录</string>
+
+    <!--关于我们-->
+    <string name="about_us">关于我们</string>
+
+
+    <!--支付方式-->
+    <string name="payment_method">提现账号</string>
+    <string name="payment_method_recommend">推荐</string>
+    <string name="payment_method_check">支票</string>
+    <string name="payment_method_paypal">Paypal</string>
+    <string name="payment_method_ali">支付宝</string>
+    <string name="payment_method_add_debit_card">添加借记卡</string>
+    <string name="payment_method_not_set_pwd">您还未设置支付密码哦~</string>
+    <string name="payment_method_not_set">您还未设置此提现账户信息~</string>
+    <string name="payment_method_paypal_not_complete">即日起,在提交申请前,Paypal提现需要补全以下个人信息</string>
+
+    <string name="check_pwd_dlg_forget">忘记密码?</string>
+    <string name="check_pwd_dlg_title">输入支付密码~</string>
+    <string name="check_pwd_dlg_message">为了您的账户安全，请输入您的账户的支付密码。</string>
+
+    <string name="payment_method_edit">编辑账户信息</string>
+    <string name="payment_method_remove">移除账户信息</string>
+    <string name="payment_method_remove_success">账号移除成功</string>
+    <string name="payment_method_edit_success">账号编辑成功</string>
+
+    <string name="edit_payment_method">编辑提现账号</string>
+
+    <string name="edit_payment_method_paypal_first">名</string>
+    <string name="edit_payment_method_paypal_first_hint">请输入名</string>
+    <string name="edit_payment_method_paypal_last">姓</string>
+    <string name="edit_payment_method_paypal_last_hint">请输入姓</string>
+    <string name="edit_payment_method_paypal_account">Palpay邮箱</string>
+    <string name="edit_payment_method_paypal_account_hint">输入PayPal收款邮箱</string>
+    <string name="edit_payment_method_paypal_area">所在地</string>
+    <string name="edit_payment_method_paypal_area_hint">请选择所在地</string>
+
+    <string name="select_paypal_area_title">所在地</string>
+
+    <string name="edit_payment_method_ali_name">姓名</string>
+    <string name="edit_payment_method_ali_name_hint">请输入认证姓名</string>
+    <string name="edit_payment_method_ali_account">支付宝账户</string>
+    <string name="edit_payment_method_ali_account_hint">请输入支付宝收款账号</string>
+
+    <string name="edit_payment_method_heli_bank">银行</string>
+    <string name="edit_payment_method_heli_bank_hint">选择银行</string>
+    <string name="edit_payment_method_heli_card">卡号</string>
+    <string name="edit_payment_method_heli_card_hint">输入银行卡号</string>
+    <string name="edit_payment_method_heli_tel">银行预留手机号</string>
+    <string name="edit_payment_method_heli_tel_hint">输入预留手机号</string>
+    <string name="edit_payment_method_heli_name">姓名</string>
+    <string name="edit_payment_method_heli_name_hint">输入持卡人姓名</string>
+    <string name="edit_payment_method_heli_identity">身份证号码</string>
+    <string name="edit_payment_method_heli_identity_hint">输入身份证号码</string>
+
+    <string name="edit_payment_method_check_first">名</string>
+    <string name="edit_payment_method_check_first_hint">请输入名</string>
+    <string name="edit_payment_method_check_last">姓</string>
+    <string name="edit_payment_method_check_last_hint">请输入姓</string>
+    <string name="edit_payment_method_check_street">地址1</string>
+    <string name="edit_payment_method_check_street_hint">请输入你的详细地址信息</string>
+    <string name="edit_payment_method_check_street_hint_2">请输入你的详细地址信息（选填）</string>
+    <string name="edit_payment_method_check_city">城市</string>
+    <string name="edit_payment_method_check_city_hint">请输入市</string>
+    <string name="edit_payment_method_check_state">州</string>
+    <string name="edit_payment_method_check_state_hint">请输入州</string>
+    <string name="edit_payment_method_check_zipcode">邮编</string>
+    <string name="edit_payment_method_check_zipcode_hint">请输入邮编</string>
+
+    <string name="edit_payment_method_submit">提交</string>
+
+    <string name="verify_mail_code_title">邮箱验证</string>
+    <string name="verify_mail_code_tips">为了您的账户安全，邮箱验证完毕后，即可进入密码设置页面</string>
+    <string name="verify_mail_mail_hint">请填写邮箱地址</string>
+    <string name="verify_mail_code_hint">请填写安全码</string>
+    <string name="verify_mail_get_code">获取验证码</string>
+    <string name="verify_mail_get_code_again">重新获取</string>
+    <string name="please_enter_mail">请先输入您的邮箱地址</string>
+    <string name="code_send_success">验证码已发送</string>
+
+
+    <string name="payment_password">支付密码</string>
+    <string name="payment_password_enter_old_hint">请输入旧密码</string>
+    <string name="payment_password_enter_hint">请输入新密码</string>
+    <string name="payment_password_confirm_hint">请再次输入新密码</string>
+    <string name="payment_password_success">支付密码设置成功</string>
+
+    <!--礼品卡-->
+    <string name="gift_cards">礼品卡</string>
+    <string name="gift_cards_date">申请时间：</string>
+    <string name="gift_cards_mark_as_spent">标记为使用</string>
+    <string name="gift_cards_resend">兑换</string>
+    <string name="gift_cards_redeem_a_gift_card">兑换礼品卡</string>
+
+    <string name="gift_cards_btn_redeem">兑换</string>
+
+    <string name="gift_card_find">找到</string>
+    <string name="gift_card_result">个结果</string>
+
+    <string name="gift_cards_redeem">兑换礼品卡</string>
+    <string name="gift_cards_redeem_redeem">兑换</string>
+
+    <string name="gift_cards_detail">礼品卡详情</string>
+    <string name="gift_cards_detail_amount_selected">选择面值</string>
+    <string name="gift_cards_detail_available">可用已生效返利金额：</string>
+    <string name="gift_cards_detail_get">实际可获得礼品卡金额：</string>
+    <string name="gift_cards_detail_redemption_amount">实际使用金额:</string>
+    <string name="gift_cards_detail_redeem_now">立即兑换</string>
+    <string name="gift_cards_detail_enter_amount">输入金额</string>
+    <string name="gift_cards_tips">礼卡仅限美国使用，请在提现前确认是否要兑换此礼卡。</string>
+    <string name="gift_cards_tips_confirm">确定兑换</string>
+
+
+    <!--分享-->
+    <string name="share_share">分享</string>
+    <string name="share_wx">微信</string>
+    <string name="share_weibo">微博</string>
+    <string name="share_wx_circle">微信朋友圈</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_tw">Twitter</string>
+    <string name="share_fb">Facebook</string>
+    <string name="share_google">Google+</string>
+    <string name="share_copy">复制链接</string>
+    <string name="share_email">邮箱</string>
+
+    <string name="share_need_wx">请安装微信客户端</string>
+    <string name="share_need_qq">请安装QQ客户端</string>
+    <string name="share_need_weibo">请安装微博客户端</string>
+    <string name="share_need_tw">请安装Twitter客户端</string>
+    <string name="share_need_fb">请安装FaceBook客户端</string>
+    <string name="share_need_google">请安装Google+客户端</string>
+
+
+    <!--关于我们-->
+    <string name="about_us_content"><![CDATA[GoCashBack.com是目前最受华人信赖和欢迎的返利网站
+     拥有千余美国大牌商家的返利优惠。
+     通过GoCashBack前往商家网站购物，用户最高可得消费金额的31%作为返利，并且可以叠加商家折扣及信用卡返现同时使用，让用户加倍获利。
+     返利神器GoCashBack App的推出让用户更加方便的追踪返利详情和热门折扣，吃喝玩乐都能享受返利优惠。
+     GoCashBack致力于让用户以最低花费过最好的生活。
+                ]]></string>
+
+    <!--邀请好友-->
+    <string name="invite_title">邀请赚钱</string>
+    <string name="invite_bonus">邀请好友注册GoCashBack\n每邀请一名好友就可以获得$%s美元奖励</string>
+    <string name="invite_friends_referred">已成功邀请好友</string>
+    <string name="invite_total_referral_reward">累计获得奖励：</string>
+    <string name="invite_option_1">方法一</string>
+    <string name="invite_unique_referral_link">个人专属链接</string>
+    <string name="invite_copy">复制</string>
+    <string name="invite_option_2">方法二</string>
+    <string name="invite_by_email">给好友发送邀请邮件</string>
+    <string name="invite_by_email_hint">输入好友邮箱</string>
+    <string name="invite_send">发送</string>
+    <string name="invite_option_3">方法三</string>
+    <string name="invite_referral_qr_code">点击保存生成的邀请二维码</string>
+    <string name="invite_referral_qr_code_save">保存二维码到手机</string>
+    <string name="invite_referral_qr_code_else">或</string>
+    <string name="invite_my_referrals">我的邀请</string>
+
+    <string name="invite_share_title">我正在使用GoCashBack，快跟我一起购物省更多吧！现在加入送$%s注册奖励</string>
+
+    <string name="code_title">折扣码：</string>
+
+    <string name="go_buy_dlg_title_1">登录后，通过GoCashBack去</string>
+    <string name="go_buy_dlg_title_2">购物可享</string>
+    <string name="go_buy_dlg_title_3">的返利</string>
+    <string name="go_buy_dlg_login">登录/注册</string>
+    <string name="go_buy_dlg_not_login">不要返利，去看看</string>
+
+
+    <string name="copy_success">复制成功</string>
+    <string name="send_success">发送成功</string>
+
+
+    <string name="change_password_not_match">两次密码输入不一致</string>
+
+    <!--成功页面-->
+    <string name="success_withdraw_title">提现申请成功</string>
+    <string name="success_withdraw_content">您可以通过消息通知获取最新的提现审核进度</string>
+    <string name="success_withdraw_button">知道了</string>
+
+    <string name="success_giftcard_title">兑换申请提交成功</string>
+    <string name="success_giftcard_content">这笔付款需要进一步验证，付款成功后你会收到一封确认邮件</string>
+    <string name="success_giftcard_button">知道了</string>
+
+    <!--<string name="success_findorder_title">提现申请成功</string>-->
+    <!--<string name="success_findorder_content">您可以通过消息通知获取最新的提现审核进度</string>-->
+    <!--<string name="success_findorder_button">知道了</string>-->
+
+
+    <string name="not_email">请填写正确的邮箱地址</string>
+
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="title">选择日期</string>
+    <!--<string name="success_findorder_title">提现申请成功</string>-->
+    <!--<string name="success_findorder_content">您可以通过消息通知获取最新的提现审核进度</string>-->
+    <!--<string name="success_findorder_button">知道了</string>-->
+
+    <string name="save">收藏成功</string>
+    <string name="cancle_save">取消收藏成功</string>
+
+
+    <!--独家福利-->
+    <string name="welfare_title">独家福利</string>
+    <string name="welfare_task_title">新手任务</string>
+    <string name="welfare_task_1">注册GoCashBack北美返利</string>
+    <string name="welfare_task_2">成功获得1次购物订单返利</string>
+    <string name="welfare_task_3">推荐一位好友</string>
+    <string name="welfare_task_go_1">去完成</string>
+    <string name="welfare_task_go_2">去完成</string>
+    <string name="welfare_task_go_3">去完成</string>
+    <string name="welfare_task_finish">已完成</string>
+    <string name="welfare_tips_title">活动说明</string>
+    <string name="welfare_tips">活动说明内容</string>
+    <string name="welfare_get">完成全部任务领取独家福利</string>
+    <string name="welfare_tell_freinds">分享给好友</string>
+    <string name="welfare_share_title">我在GoCashBack拿到了$6新手奖励！</string>
+    <string name="welfare_share_text">快来和我一起购物拿返利吧！现在加入你可以获得$x注册奖励，我也同时有$x推荐奖励哦~ </string>
+
+    <!--隐私政策-->
+    <string name="privacy_policy_title">GoCashBack APP隐私权保护声明</string>
+    <string name="privacy_policy_foreword_1">GoCashBack保护用户个人隐私的承诺。我们非常重视对您的个人隐私保护，有时候我们需要某些信息才能为您提供您请求的服务，本隐私声明解释了这些情况下的数据收集和使用情况。</string>
+    <string name="privacy_policy_foreword_2">本隐私声明适用于我公司的所有相关服务，随着我公司服务范围的扩大，隐私声明的内容可由我公司随时更新，且毋须另行通知。更新后的隐私声明一旦在网页上公布即有效代替原来的隐私声明。</string>
+    <string name="privacy_policy_title_1">一、本公司如何收集您的个人信息</string>
+    <string name="privacy_policy_content_1">个人信息是可用于唯一识别或联系某人的数据。在App注册过程中，我们需要您提供一个独享的用户名及密码，手机号码及其他统计信息（性别、头像）。为了保护个人隐私，您不应提供除本公司特别要求之外的任何其它信息。如果您向我们提供其他人(如配偶或同事)的个人信息，您必须获得该人士的许可。</string>
+    <string name="privacy_policy_title_2">二、本公司如何使用您的个人信息</string>
+    <string name="privacy_policy_content_2">通过您的个人信息，向您发送本公司移动App的服务信息。\n通过您的个人信息实现密码找回功能</string>
+    <string name="privacy_policy_title_3">三、个人信息安全</string>
+    <string name="privacy_policy_content_3">保证您的个人数据的安全对我们来说至关重要。当您在本公司的移动App中注册输入个人数据时，我们会利用安全套接字层技术(SSL)对这些信息进行加密。\n在数据传输和数据保管两个阶段里，我们会通过广为接受的行业标准（如防火墙、加密和数据隐私法律要求）来保护您向我们提交的信息。\n然而，没有任何一种互联网传输或电子存储方法是100%安全的。因此，尽管我们通过商业上可接受的方式来保护您的个人信息，但仍无法保证信息的绝对安全。</string>
+    <string name="privacy_policy_title_4">四、本公司会将个人信息保存多久</string>
+    <string name="privacy_policy_content_4">一般来说，本公司仅保留您的个人信息至履行收集目的所需的期限，同时将遵守适用法律规定的数据保留期限。</string>
+    <string name="privacy_policy_title_5">五、法律免责声明</string>
+    <string name="privacy_policy_content_5">在法律要求的情况下，以及本公司认为必须披露与您有关的信息来保护本公司的法定权益和/或遵守司法程序、法院指令或适用于本公司的移动App的法律程序时，我们有权透露您的个人信息。\n如果本公司确定为了执行本公司的条款和条件或保护我们的经营，披露是合理必须的，则我们可披露与您有关的信息。</string>
+    <string name="privacy_policy_title_6">六、本隐私政策的更改</string>
+    <string name="privacy_policy_content_6">如果决定更改隐私政策，我们会在本政策中、本公司网站中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。</string>
+    <string name="privacy_policy_end">本公司保留随时修改本政策的权利</string><string name="privacy_policy_cancel">取消</string>
+    <string name="privacy_policy_accept">我同意</string>
+
+</resources>

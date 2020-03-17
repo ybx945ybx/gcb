@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/gift_cards_redeem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <com.gocashback.lib_common.widget.GcbSearchView
+        android:id="@+id/gcbSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView"
+        app:sv_editable="true">
+
+    </com.gocashback.lib_common.widget.GcbSearchView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llyt_result_count"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/redFDF1EE"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/gcbSearchView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/redFF4E4E"
+            android:textSize="14sp"
+            android:text="@string/gift_card_find"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/redFF4E4E"
+            android:textSize="14sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            tools:text="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/redFF4E4E"
+            android:textSize="14sp"
+            android:text="@string/gift_card_result"/>
+    </LinearLayout>
+
+    <com.gocashback.lib_common.widget.MultipleStatusView
+        android:id="@+id/msv"
+        style="@style/MSV_BG"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llyt_result_count">
+
+        <com.gocashback.lib_common.widget.GcbSwipeRefreshLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rycv_gift_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyF5F5F5"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="12dp"
+                android:scrollbars="none" />
+
+        </com.gocashback.lib_common.widget.GcbSwipeRefreshLayout>
+
+    </com.gocashback.lib_common.widget.MultipleStatusView>
+
+
+    <!--<View-->
+    <!--style="@style/CommonTabUnderShadow"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />-->
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/bg_white_corner_6"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.gocashback.lib_common.widget.GcbImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="168:111"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_brand_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/grey333333"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:gravity="center"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Amazon.com "
+        app:layout_constraintTop_toBottomOf="@+id/iv_img" />
+
+    <TextView
+        android:id="@+id/tv_bonus_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/redFF4E4E"
+        android:textSize="12sp"
+        tools:text="+1% bonus card face value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brand_name" />
+
+    <TextView
+        android:id="@+id/tv_redeem"
+        style="@style/ButtonCircleRed"
+        android:layout_width="105dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:text="@string/gift_cards_btn_redeem"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_margin="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bonus_percent" />
+</android.support.constraint.ConstraintLayout>

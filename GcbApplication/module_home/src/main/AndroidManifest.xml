@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gocashback.module_home" >
+
+    <application>
+        <activity android:name=".activity.HotDealActivity" />
+        <activity android:name=".activity.DealDetailActivity" />
+    </application>
+
+</manifest>

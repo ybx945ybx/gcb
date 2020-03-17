@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_redff4e4e_corner_circle" android:state_enabled="true" />
+    <item android:drawable="@drawable/bg_greyefefef_circle" android:state_enabled="false" />
+    <item android:drawable="@drawable/bg_redff4e4e_corner_circle" />
+</selector>

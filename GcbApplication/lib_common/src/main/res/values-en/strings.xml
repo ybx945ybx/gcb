@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lib_common</string>
+    <string name="facebook_app_id">826414137465968</string>
+
+    <string name="search">Search</string>
+    <string name="history_search">History</string>
+    <string name="change">Refresh</string>
+    <string name="store">Stores</string>
+    <string name="cancel">Cancel</string>
+    <string name="hot_store">Hot Stores</string>
+    <string name="view_more">More</string>
+    <string name="view_all">See all deals</string>
+    <string name="discover">Discover</string>
+
+
+    <string name="main_bottom_tab_home">Home</string>
+    <string name="main_bottom_tab_store">Stores</string>
+    <string name="main_bottom_tab_discover">Discover</string>
+    <string name="main_bottom_tab_me">Me</string>
+
+    <string name="msv_error_retry">Refresh</string>
+    <string name="msv_empty_retry">Refresh</string>
+    <string name="msv_empty_gift_card">Redeem a Gift Card</string>
+
+    <string name="msv_net_error">Network Error</string>
+    <string name="msv_no_result">No Results Found</string>
+    <string name="msv_no_content">No Results Found</string>
+    <string name="msv_no_orders">No Orders</string>
+    <string name="msv_no_cash_back">No Cash Back</string>
+    <string name="msv_no_payment_history">No Payment History</string>
+    <string name="msv_no_click_history">No Click History</string>
+    <string name="msv_no_favorites">No Favorites</string>
+    <string name="msv_no_message">No Messages</string>
+    <string name="msv_no_gift_card">No Gift Cards</string>
+
+    <!--首页版块-->
+    <string name="home_tab_stores">Stores</string>
+    <string name="home_tab_deals">Deals</string>
+    <string name="home_sub_title_recommend_store">Recommended Stores</string>
+    <string name="home_sub_title_favorite_store">Favorite Stores</string>
+    <string name="home_sub_title_hot_store">Hot Stores</string>
+    <string name="home_sub_title_popular_deal">Top Deals</string>
+    <string name="home_sub_title_hot_deal">Hot Deals</string>
+    <string name="home_sub_title_recommend_deal">Editor\'s Pick</string>
+
+    <string name="deal_cate_newest">Newest Deals</string>
+
+    <string name="deal_detail">Deal Details</string>
+    <string name="deal_detail_code">Code</string>
+    <string name="deal_detail_code_copy">Copy</string>
+    <string name="deal_detail_terms">Cash Back Terms and Conditions</string>
+    <string name="deal_detail_related_stores">Related Stores</string>
+    <string name="deal_detail_more_deals">More Deals</string>
+    <string name="deal_detail_past_due">Expired</string>
+    <string name="deal_expires">Expires:</string>
+
+    <!--商家分类版块-->
+    <string name="store_cate_default">Default</string>
+    <string name="store_cate_cash_back">Cash Back</string>
+    <string name="store_cate_hot">Popularity</string>
+    <string name="store_collect"> Favorites</string>
+
+    <string name="store_detail">Store Details</string>
+    <string name="store_detail_cash_back_categories">Cash Back Categories</string>
+    <string name="store_detail_categories">Categories</string>
+    <string name="store_detail_cash_back">Cash Back</string>
+    <string name="store_detail_cash_back_terms">Cash Back Terms</string>
+    <string name="store_detail_eyeconic_deals">Related Deals</string>
+    <string name="store_detail_share">Share</string>
+    <string name="store_detail_collect">Favorites</string>
+    <string name="store_detail_shop">Shop</string>
+
+    <string name="go_buy_transfer">Transferring</string>
+    <string name="go_buy_tricking">Tracking your shopping trip now</string>
+    <string name="go_buy_code_copied">Code Copied</string>
+    <string name="go_buy_how_to">How to Earn Cash Back</string>
+    <string name="go_buy_how_to_tis">We have recorded your visit. Any cash back earned should show in your account within 1-7 days</string>
+
+    <!--登录注册页面-->
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="btn_register">Sign Up</string>
+    <string name="btn_login">Log In</string>
+    <string name="hint_email">Enter your email address</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_vertification">Enter verification code</string>
+    <string name="show_friend_code">My friend referred me (My friend will receive $%s referral reward)</string>
+    <string name="hint_friend_code">Your friend\'s email address/referral code</string>
+    <string name="agree">I agree with GoCashBack </string>
+    <string name="terms_conditions">Terms and Conditions</string>
+    <string name="forget_password">Forgot your password？</string>
+    <string name="title_forget_password">Forgot Password</string>
+    <string name="forget_password_submit">Submit</string>
+    <string name="check_email">Please Check Your Email</string>
+
+    <!--个人中心版块-->
+    <string name="sign_up_login">Sign Up/Log In</string>
+
+    <string name="me_my_rebate">My Cash Back</string>
+    <string name="me_my_order">My Orders</string>
+    <string name="me_my_find_order">Find My Order</string>
+    <string name="me_my_withdow">Request Payment</string>
+    <string name="me_my_withdow_record">Payment History</string>
+    <string name="me_my_gift_card">My Gift Cards</string>
+
+    <string name="me_collect">My Favorites</string>
+    <string name="me_record">My Click History</string>
+    <string name="me_invite">Referral Bonus</string>
+    <string name="me_message_center">Inbox</string>
+    <string name="me_help">Help</string>
+    <string name="me_setting">Settings</string>
+
+    <string name="withdraw">Request Payment</string>
+    <string name="withdraw_available">Available</string>
+    <string name="withdraw_pending">Pending</string>
+
+    <!--状态标签-->
+    <string name="status_cash_pending">Pending</string>
+    <string name="status_cash_available">Available</string>
+    <!--<string name="status_cash_pending">Cash Pending</string>-->
+    <!--<string name="status_cash_available">Cash Available</string>-->
+
+    <string name="status_order_pending">Pending</string>
+    <string name="status_order_available">Available</string>
+
+    <string name="status_find_order_pending">Pending</string>
+    <string name="status_find_order_reviewing">Reviewing</string>
+    <string name="status_find_order_invalid">Rejected</string>
+    <string name="status_find_order_added">Added</string>
+    <string name="status_find_order_closed">Closed</string>
+
+    <string name="status_withdraw_processing">Processing</string>
+    <string name="status_withdraw_paid">Paid</string>
+    <string name="status_withdraw_failed">Failed</string>
+
+    <!--返利类型-->
+    <string name="rebate_type_order">Order Cash Back</string>
+    <string name="rebate_type_offline">Offline Cash Back</string>
+    <string name="rebate_type_invite">Referral Bouns</string>
+    <string name="rebate_type_friend_order">Friend\'s Cash Back</string>
+    <string name="rebate_type_activity">Event Bonus</string>
+    <string name="rebate_type_register">Registration Bonus</string>
+
+    <string name="rebate_filter_status">Status</string>
+    <string name="rebate_filter_type">Type</string>
+    <string name="rebate_filter_all">All</string>
+    <string name="rebate_filter_confirm">Confirm</string>
+
+    <string name="rebate_detail">Cash Back Details</string>
+    <string name="rebate_detail_order_date">Order Date</string>
+    <string name="rebate_detail_cashback">Cash Back</string>
+    <string name="rebate_detail_status">Status</string>
+    <string name="rebate_detail_friend_email_address">Friend\'s Email</string>
+    <string name="rebate_detail_type">Type</string>
+
+    <!--我的订单-->
+    <string name="my_orders">My Orders</string>
+    <string name="my_orders_tab_all">All</string>
+    <string name="my_orders_tab_pending">Pending</string>
+    <string name="my_orders_tab_available">Available</string>
+    <string name="my_orders_rebate">Cash Back: </string>
+    <string name="my_orders_amount">Amount: </string>
+    <string name="order_detail">Order Details</string>
+    <string name="order_detail_order_id">Order Number</string>
+    <string name="order_detail_store">Store</string>
+    <string name="order_detail_amount">Amount</string>
+    <string name="order_detail_cash_back">Cash Back</string>
+    <string name="order_detail_date">Date</string>
+    <string name="order_detail_status">Status</string>
+
+    <!--找回订单-->
+    <string name="find_my_order">Find My Order</string>
+    <string name="present_my_order">Add an Order</string>
+    <string name="find_my_order_tab_all">All</string>
+    <string name="find_my_order_tab_pending">Pending</string>
+    <string name="find_my_order_tab_reviewing">Reviewing</string>
+    <string name="find_my_order_tab_invaild">Rejected</string>
+    <string name="find_my_order_tab_added">Added</string>
+    <string name="find_my_order_tab_closed">Closed</string>
+
+    <string name="find_order_detail_date">Date</string>
+    <string name="find_order_detail_status">Status</string>
+
+    <string name="find_order_submit">Find My Order</string>
+    <string name="find_order_submit_tips">Please provide order details and we will submit the order inquiry to the merchant as soon as possible. Please note: only orders placed within 90 days can be retrieved.</string>
+    <string name="find_order_submit_store">Store:</string>
+    <string name="find_order_submit_store_hint">Select Store</string>
+    <string name="find_order_submit_date">Date:</string>
+    <string name="find_order_submit_date_hint">Select Date</string>
+    <string name="find_order_submit_order_id">Order Id:</string>
+    <string name="find_order_submit_order_id_hint">Enter Your Order Number</string>
+    <string name="find_order_submit_amount">Amount:</string>
+    <string name="find_order_submit_amount_hint">Enter Amount</string>
+    <string name="find_order_submit_screenshots">Order Confirmation Screenshots</string>
+    <string name="find_order_submit_screenshots_tips">Please make sure you include merchant name, transaction date, order amount, order number, and product details.</string>
+    <string name="find_order_submit_btn">Submit</string>
+
+    <string name="find_order_submit_select_store">Select Store</string>
+
+    <!--申请提现-->
+    <string name="withdraw_gift_card">Redeem Gift Cards</string>
+    <string name="withdraw_payment_method">Payment Method</string>
+    <string name="withdraw_payment_method_hint">Select payment method</string>
+    <string name="withdraw_payment_method_add">Add Payment Method</string>
+    <string name="withdraw_payment_amount">Payment Amount</string>
+    <string name="withdraw_payable">Available:</string>
+    <string name="withdraw_amount_tips">You can request a withdrawal once your “Cash Available” reaches $%s.</string>
+    <string name="withdraw_amount_error_tips">Withdrawal amount should not be less than $%s.</string>
+    <string name="withdraw_payment_menthods">Payment Methods</string>
+    <string name="withdraw_bottom_recorder">Payment History</string>
+    <string name="withdraw_bottom_methods">Payment Settings</string>
+
+    <!--提现记录-->
+    <string name="withdraw_recorder">Payment History</string>
+    <string name="withdraw_recorder_item_title">Enter Amount</string>
+    <string name="withdraw_recorder_item_alipay">Alipay</string>
+    <string name="withdraw_recorder_item_check">Check</string>
+    <string name="withdraw_recorder_item_paypal">PayPal</string>
+    <string name="withdraw_recorder_item_gift">Gift Cards</string>
+
+    <string name="withdraw_recorder_status_all">All</string>
+    <string name="withdraw_recorder_status_processing">Processing</string>
+    <string name="withdraw_recorder_status_paid">Paid</string>
+    <string name="withdraw_recorder_status_failure">Failed</string>
+
+    <string name="withdraw_recorder_type_all">All</string>
+    <string name="withdraw_recorder_type_paypal">PayPal</string>
+    <string name="withdraw_recorder_type_check">Check</string>
+    <string name="withdraw_recorder_type_alipay">Alipay</string>
+    <string name="withdraw_recorder_type_gift">Gift Cards</string>
+
+    <!--提现记录详情-->
+    <string name="withdraw_detail">Payment Details</string>
+    <string name="withdraw_detail_date">Date</string>
+    <string name="withdraw_detail_amount">Amount</string>
+    <string name="withdraw_detail_status">Status</string>
+    <string name="withdraw_detail_type">Type</string>
+    <string name="withdraw_detail_payment_account">Payment Account</string>
+
+
+    <!--帮助中心-->
+    <string name="help_center">Help</string>
+    <string name="help_center_other_questions"><![CDATA[Contact Us]]></string>
+    <string name="help_center_email">Email</string>
+    <string name="help_center_feedback">Send us a message</string>
+    <string name="help_center_wx">WeChat</string>
+    <string name="help_center_add_friend">Add Customer Service</string>
+
+    <!--消息-->
+    <string name="message_center">Inbox</string>
+    <string name="message_tab_deal">Deals</string>
+    <string name="message_tab_system">Notifications</string>
+
+    <!--我的收藏-->
+    <string name="my_collection">My Favorites</string>
+    <string name="my_collection_tab_stores">Stores</string>
+    <string name="my_collection_tab_deals">Deals</string>
+    <string name="my_collection_edit">Edit</string>
+    <string name="my_collection_cancel">Cancel</string>
+    <string name="my_collection_all">All</string>
+    <string name="my_collection_delete">Delete</string>
+
+    <!--浏览记录-->
+    <string name="click_history">My Click History</string>
+    <string name="click_history_tab_stores">Stores</string>
+    <string name="click_history_tab_deals">Deals</string>
+
+    <!--设置-->
+    <string name="settings">Settings</string>
+    <string name="settings_payment_methods">Payment Methods</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_change_password">Change Password</string>
+    <string name="settings_change_password_success">Password changed successfully</string>
+    <string name="settings_payment_password">Payment Passcode</string>
+    <string name="settings_bind_on_account">Link Your Accounts</string>
+    <string name="settings_push_notifications">Push Notifications</string>
+    <string name="settings_about_us">About Us</string>
+    <string name="settings_clear_cache">Clear Cache</string>
+    <string name="settings_clear_cache_success">Cleared successfully</string>
+    <string name="settings_log_out">Log Out</string>
+    <string name="setting_logout_success"> Logged out successfully</string>
+
+    <!--关于我们-->
+    <string name="about_us">About Us</string>
+
+
+    <!--支付方式-->
+    <string name="payment_method">Payment Methods</string>
+    <string name="payment_method_recommend">Recommended</string>
+    <string name="payment_method_check">Check</string>
+    <string name="payment_method_paypal">PayPal</string>
+    <string name="payment_method_ali">Alipay</string>
+    <string name="payment_method_add_debit_card">Add a Debit Card</string>
+    <string name="payment_method_not_set_pwd">Please set your payment passcode</string>
+    f
+    <string name="payment_method_not_set">Please set your payment information</string>
+
+    <string name="check_pwd_dlg_forget">Forgot Passcode?</string>
+    <string name="check_pwd_dlg_title">Enter Your Passcode</string>
+    <string name="check_pwd_dlg_message">For your account\'s safety, please enter your payment passcode</string>
+
+    <string name="payment_method_edit">Edit This Payment Method</string>
+    <string name="payment_method_remove">Remove This Payment Method</string>
+    <string name="payment_method_remove_success">Deleted Successfully</string>
+    <string name="payment_method_edit_success">Updated Successfully</string>
+    <string name="payment_method_paypal_not_complete">Please fill out below information for future PayPal withdrawal.</string>
+
+
+    <string name="edit_payment_method">Edit Payment Method</string>
+
+    <string name="edit_payment_method_paypal_first">First Name</string>
+    <string name="edit_payment_method_paypal_first_hint">First Name</string>
+    <string name="edit_payment_method_paypal_last">Last Name</string>
+    <string name="edit_payment_method_paypal_last_hint">Last Name</string>
+    <string name="edit_payment_method_paypal_account">PayPal Account（Email Address）</string>
+    <string name="edit_payment_method_paypal_account_hint">Enter PayPal Account</string>
+    <string name="edit_payment_method_paypal_area">Recipient\'s region of residence</string>
+    <string name="edit_payment_method_paypal_area_hint">Enter Recipient\'s region of residence</string>
+
+    <string name="select_paypal_area_title">Enter Recipient\'s region of residence</string>
+
+    <string name="edit_payment_method_ali_name">Alipay Payee Name</string>
+    <string name="edit_payment_method_ali_name_hint">Enter Alipay Payee Name</string>
+    <string name="edit_payment_method_ali_account">Alipay Account (Email address or phone number)</string>
+    <string name="edit_payment_method_ali_account_hint">Enter Alipay Account</string>
+
+    <string name="edit_payment_method_heli_bank">Bank</string>
+    <string name="edit_payment_method_heli_bank_hint">Select your bank</string>
+    <string name="edit_payment_method_heli_card">Card Number</string>
+    <string name="edit_payment_method_heli_card_hint">Please enter your card number</string>
+    <string name="edit_payment_method_heli_tel">Bank Linked Phone Number</string>
+    <string name="edit_payment_method_heli_tel_hint">Please enter your cell phone number</string>
+    <string name="edit_payment_method_heli_name">Cardholder Name</string>
+    <string name="edit_payment_method_heli_name_hint">Please enter your cardholder Name</string>
+    <string name="edit_payment_method_heli_identity">Identity Card Number</string>
+    <string name="edit_payment_method_heli_identity_hint">Please enter your identity card number</string>
+
+    <string name="edit_payment_method_check_first">First</string>
+    <string name="edit_payment_method_check_first_hint">First Name</string>
+    <string name="edit_payment_method_check_last">Last</string>
+    <string name="edit_payment_method_check_last_hint">Last Name</string>
+    <string name="edit_payment_method_check_street">Street Address</string>
+    <string name="edit_payment_method_check_street_hint">Street Address</string>
+    <string name="edit_payment_method_check_street_hint_2">Street Address</string>
+    <string name="edit_payment_method_check_city">City</string>
+    <string name="edit_payment_method_check_city_hint">City</string>
+    <string name="edit_payment_method_check_state">State/Province</string>
+    <string name="edit_payment_method_check_state_hint">State/Provinces</string>
+    <string name="edit_payment_method_check_zipcode">Zip Code</string>
+    <string name="edit_payment_method_check_zipcode_hint">Zip Code</string>
+
+    <string name="edit_payment_method_submit">Submit</string>
+
+    <string name="verify_mail_code_title">Security Check</string>
+    <string name="verify_mail_code_tips">For your account\'s safety, please click below to receive a verification code</string>
+    <string name="verify_mail_mail_hint">Enter Email Address</string>
+    <string name="verify_mail_code_hint">Enter Security Code</string>
+    <string name="verify_mail_get_code">Click to Request Code</string>
+    <string name="verify_mail_get_code_again">Resend Code</string>
+    <string name="please_enter_mail">Please Enter Your Email Address First</string>
+    <string name="code_send_success">Code Sent</string>
+
+    <string name="payment_password">Payment Passcode</string>
+    <string name="payment_password_enter_old_hint">Enter Old Passcode</string>
+    <string name="payment_password_enter_hint">Enter New Passcode</string>
+    <string name="payment_password_confirm_hint">Confirm Passcode</string>
+    <string name="payment_password_success">Set Successfully</string>
+
+    <!--礼品卡-->
+    <string name="gift_cards">Gift Cards</string>
+    <string name="gift_cards_date">Date Requested:</string>
+    <string name="gift_cards_mark_as_spent">Mark as spent</string>
+    <string name="gift_cards_resend">Resend</string>
+    <string name="gift_cards_redeem_a_gift_card">Redeem a Gift Card</string>
+
+    <string name="gift_cards_btn_redeem">Redeem</string>
+
+    <string name="gift_card_find">Found</string>
+    <string name="gift_card_result">results</string>
+
+    <string name="gift_cards_redeem">Gift Cards Redemption</string>
+    <string name="gift_cards_redeem_redeem">Redeem</string>
+
+    <string name="gift_cards_detail">Gift Card Details</string>
+    <string name="gift_cards_detail_amount_selected">Amount Selected</string>
+    <string name="gift_cards_detail_available">Available Cash Back Balance：</string>
+    <string name="gift_cards_detail_get">Total Gift Card Value You Can Get：</string>
+    <string name="gift_cards_detail_redemption_amount">Redemption Amount:</string>
+    <string name="gift_cards_detail_redeem_now">Redeem Now</string>
+    <string name="gift_cards_detail_enter_amount">Enter Amount</string>
+    <string name="gift_cards_tips">Gift cards may only be redeemed in the United States. Please be aware of store redemption policies before withdrawal.</string>
+    <string name="gift_cards_tips_confirm">Submit</string>
+
+    <!--分享-->
+    <string name="share_share">Share</string>
+    <string name="share_wx">WeChat</string>
+    <string name="share_weibo">Weibo</string>
+    <string name="share_wx_circle">WeChat Moment</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_tw">Twitter</string>
+    <string name="share_fb">Facebook</string>
+    <string name="share_google">Google+</string>
+    <string name="share_copy">Copy Link</string>
+    <string name="share_email">Email</string>
+
+
+    <string name="share_need_wx">Please install WeChat</string>
+    <string name="share_need_qq">Please install QQ</string>
+    <string name="share_need_weibo">Please install Weibo</string>
+    <string name="share_need_tw">Please install Twitter</string>
+    <string name="share_need_fb">Please install FaceBook</string>
+    <string name="share_need_google">Please install Google+</string>
+
+
+    <!--关于我们-->
+    <string name="about_us_content"><![CDATA[GoCashBack has grown to be one of the most trusted and fastest growing rebate websites since its founding in 2014.\n" +
+                "Our members around the world have received millions in cash back earnings from North America\'s beloved brands and merchants.\n" +
+                " Find exclusive and deep discounts from your favorite brands by checking our real-time “Deals” section.\n" +
+                "Don’t miss our Super Cash Back featured merchant of the day to earn a maximum rebate!\n" +
+                "Shop GoCashBack for higher rebate rates in Skincare, Cosmetics, Apparel, Shoes, Accessories, Home & Garden, Baby & Kids, Electronics, Travel, Leisure & many more!" +
+                "\n]]></string>
+
+    <!--邀请好友-->
+    <string name="invite_title">Refer A Friend</string>
+    <string name="invite_bonus">For every friend you invite to sign up with GoCashBack, both of you will get $%s bonus</string>
+    <string name="invite_friends_referred">Friends Referred</string>
+    <string name="invite_total_referral_reward">Total Referral Reward：</string>
+    <string name="invite_option_1">Option 1</string>
+    <string name="invite_unique_referral_link">Share Referral Link</string>
+    <string name="invite_copy">Copy</string>
+    <string name="invite_option_2">Option 2</string>
+    <string name="invite_by_email">Invite Friends by Email</string>
+    <string name="invite_by_email_hint">Enter friend\'s email address</string>
+    <string name="invite_send">Send</string>
+    <string name="invite_option_3">Option 3</string>
+    <string name="invite_referral_qr_code">Share Referral QR Code</string>
+    <string name="invite_referral_qr_code_save">Save QR Code</string>
+    <string name="invite_referral_qr_code_else">or</string>
+    <string name="invite_my_referrals">My Referrals</string>
+
+    <string name="invite_share_title">Join me on GoCashBack and get a $%s sign up bonus!</string>
+
+
+    <string name="code_title">Code: </string>
+
+    <string name="go_buy_dlg_title_1">Shop through GoCashBack at</string>
+    <string name="go_buy_dlg_title_2"></string>
+    <string name="go_buy_dlg_title_3">Cash Back</string>
+    <string name="go_buy_dlg_login">Log In / Sign Up</string>
+    <string name="go_buy_dlg_not_login">Just Browsing</string>
+
+    <string name="copy_success">Copied</string>
+    <string name="send_success">Sent</string>
+
+    <string name="change_password_not_match">The passwords don’t match. Please try again.</string>
+
+    <!--成功页面-->
+    <string name="success_withdraw_title">Payment request submitted successfully</string>
+    <string name="success_withdraw_content">You will receive updates in your inbox</string>
+    <string name="success_withdraw_button">Got it</string>
+
+    <string name="success_giftcard_title">Redemption request sent successfully</string>
+    <string name="success_giftcard_content">This payment requires further verification. You will receive an email confirmation when your payment has been sent.</string>
+    <string name="success_giftcard_button">Got it</string>
+
+    <string name="not_email">Please make sure your email address is correct.</string>
+
+
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="day">day</string>
+    <string name="hour">hour</string>
+    <string name="minute">minute</string>
+    <string name="title">Select the date</string>
+
+    <!--<string name="success_findorder_title">提现申请成功</string>-->
+    <!--<string name="success_findorder_content">您可以通过消息通知获取最新的提现审核进度</string>-->
+    <!--<string name="success_findorder_button">知道了</string>-->
+
+
+    <!--<string name="success_findorder_title">提现申请成功</string>-->
+    <!--<string name="success_findorder_content">您可以通过消息通知获取最新的提现审核进度</string>-->
+    <!--<string name="success_findorder_button">知道了</string>-->
+
+
+    <string name="save">Saved</string>
+    <string name="cancle_save">Removed</string>
+
+
+    <!--独家福利-->
+    <string name="welfare_title">Exclusive Bonus</string>
+    <string name="welfare_task_title">How to Get Welcome Bonus</string>
+    <string name="welfare_task_1">Join GoCashBack</string>
+    <string name="welfare_task_2">Get your first order cash back</string>
+    <string name="welfare_task_3">Refer a friend</string>
+    <string name="welfare_task_go_1">Register</string>
+    <string name="welfare_task_go_2">Shop</string>
+    <string name="welfare_task_go_3">Refer</string>
+    <string name="welfare_task_finish">Completed</string>
+    <string name="welfare_tips_title"><![CDATA[Terms & Conditions]]></string>
+    <string name="welfare_tips">活动说明内容</string>
+    <string name="welfare_get">Receive $6 bonus for completing all tasks </string>
+    <string name="welfare_tell_freinds">Tell Your Friends</string>
+    <string name="welfare_share_title">Omg! I got $6 event bonus from GoCashBack.</string>
+    <string name="welfare_share_text">Join me and start earning cash back on all your online purchases! Sign up now to get $x registration bonus and help me earn $x referral bonus as well!</string>
+
+    <!--隐私政策-->
+    <string name="privacy_policy_title">GoCashBack APP Privacy Policy</string>
+    <string name="privacy_policy_foreword_1">This Privacy Policy ("Privacy Policy") explains how GoCashBack. ("GoCashBack," "us," "our," and "we"), collects, uses, and shares information when you interact with us. This Privacy Policy applies to all users of GoCashBack’s mobile-device applications we offer, such our iOS and Android applications, that are branded "GoCashBack" and link or reference this Privacy Policy (collectively, the "Services").</string>
+    <string name="privacy_policy_foreword_2">This Privacy Policy replaces and supersedes the last version of this Privacy Policy for all users (including for those users that registered prior to the Effective Date). If you do not agree to our practices, please do not register, subscribe, create an account, or otherwise interact with the Services. By signing up for, using, or continuing to use the Services, you consent to the privacy practices described in this policy.</string>
+    <string name="privacy_policy_title_1">How does GoCashBack collect your personal information?</string>
+    <string name="privacy_policy_content_1">Personal information is the only data which allows the company to identify or contact you. During the App registration process, we need you to provide an exclusive username and password, mobile phone number and other statistical information (gender, avatar). To protect personal privacy, you should not provide any personal information which we did not request. If you provide us with personal information of another person, such as a spouse or colleague, you must obtain permission from that person.</string>
+    <string name="privacy_policy_title_2">How does GoCashBack use your personal information?</string>
+    <string name="privacy_policy_content_2">To send you service information of our mobile app and provide password retrieving service. </string>
+    <string name="privacy_policy_title_3">Personal Information Safety</string>
+    <string name="privacy_policy_content_3">Keeping your personal data safe is important to us. We encrypt your personal data with Secure Sockets Layer Technology (SSL) when you sign up on our mobile app.\nDuring data transmission and data storage, we protect the information you submit to us through widely accepted industry standards such as firewalls, encryption, and data privacy legal requirements.\nWe use aforementioned physical, managerial, and technical safeguards that are designed to improve the integrity and security of your Personal Information. We cannot, however, ensure or warrant the security of any information you transmit to us or store on the Service.</string>
+    <string name="privacy_policy_title_4">How long will the company keep personal information?</string>
+    <string name="privacy_policy_content_4">In general, the Company only retains your personal information for as long as necessary to fulfill the purpose for which it was collected, and will comply with the data retention period required by applicable law.</string>
+    <string name="privacy_policy_title_5">Legal Disclaimer</string>
+    <string name="privacy_policy_content_5">Where legally required, and when we believe that we must disclose personal information to protect our legal rights and/or comply with judicial procedures, court orders or legal procedures applicable to our mobile app, we have the right to disclose your personal information.\nIf the Company determines that disclosure is reasonably necessary in order to enforce our terms and conditions or to protect our operations, we may disclose information about you.</string>
+    <string name="privacy_policy_title_6">Changes to this privacy policy</string>
+    <string name="privacy_policy_content_6">If we decide to change our privacy policy, we will post those changes in this policy, on our website, and where we deem appropriate so that you understand how we collect and use your personal information, who can access it, and under what certain circumstances will we disclose the information.</string>
+    <string name="privacy_policy_end">The company reserves the right to make amendments to this Privacy Policy. </string>
+    <string name="privacy_policy_cancel">Cancel</string>
+    <string name="privacy_policy_accept">I Agree</string>
+</resources>

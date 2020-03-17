@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="grey212121">#212121</color>
+    <color name="grey1D1D1F">#1D1D1F</color>
+    <color name="grey78787D">#78787D</color>
+    <color name="grey333333">#333333</color>
+    <color name="grey3C3C3C">#3C3C3C</color>
+    <color name="greyCCCCCC">#CCCCCC</color>
+    <color name="grey999999">#999999</color>
+    <color name="grey666666">#666666</color>
+    <color name="greyF9F8F8">#F9F8F8</color>
+    <color name="greyF5F5F5">#F5F5F5</color>
+    <color name="grey555555">#555555</color>
+    <color name="greyEFEFEF">#EFEFEF</color>
+    <color name="greyEAEAEA">#EAEAEA</color>
+    <color name="greyE7E7E7">#E7E7E7</color>
+    <color name="greyE6E6E6">#E6E6E6</color>
+    <color name="greyDDDDDD">#DDDDDD</color>
+    <color name="greyDEDEDE">#DEDEDE</color>
+    <color name="greyEEEEEE">#EEEEEE</color>
+    <color name="grey757575">#757575</color>
+    <color name="greyC1C1C1">#C1C1C1</color>
+    <color name="grey818181">#818181</color>
+    <color name="greyBABABA">#BABABA</color>
+    <color name="greyB8B8B8">#B8B8B8</color>
+    <color name="grey4F4F53">#4F4F53</color>
+
+
+    <color name="redFF4E4E">#FF4E4E</color>
+    <color name="redFF2741">#FF2741</color>
+    <color name="redFF6E6E">#FF6E6E</color>
+    <color name="redFFEEEE">#FFEEEE</color>
+    <color name="redFFE8E7">#FFE8E7</color>
+    <color name="redFDF1EE">#FDF1EE</color>
+    <color name="redFF4201">#FF4201</color>
+
+    <color name="blue4A90E2">#4A90E2</color>
+
+    <color name="yellowF4C87F">#F4C87F</color>
+
+    <color name="yellowFF9A00">#FF9A00</color>
+    <color name="green00D8B0">#00D8B0</color>
+    <color name="orangeFF804D">#FF804D</color>
+    <color name="blue00A7FF">#00A7FF</color>
+    <color name="greyCDCDCD">#CDCDCD</color>
+
+    <!-- 50%透明黑 -->
+    <color name="colorBlur50">#7F000000</color>
+    <!-- 80%透明黑 -->
+    <color name="colorBlur80">#CC000000</color>
+    <!-- 60%透明黑 -->
+    <color name="colorBlur60">#99000000</color>
+    <!-- 40%透明黑 -->
+    <color name="colorBlur40">#66000000</color>
+    <!-- 100%透明黑 -->
+    <color name="colorBlur100">#00000000</color>
+
+
+    <color name="date_picker_bg">#FFFFFF</color>
+    <color name="date_picker_divider">#11112233</color>
+    <color name="date_picker_text_light">#FF7A56</color>
+    <color name="date_picker_text_dark">#979797</color>
+</resources>

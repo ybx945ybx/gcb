@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GcbHeadView">
+        <attr name="hv_center_text" format="string" />
+        <attr name="hv_right_text" format="string" />
+        <attr name="hv_right_img" format="reference" />
+        <attr name="hv_left_img" format="reference" />
+        <attr name="hv_show_left_img" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GcbLoginEditView">
+        <!--<attr name="show_error" format="boolean" />-->
+        <attr name="android:inputType" />
+        <attr name="android:hint" />
+        <attr name="android:maxLines" />
+        <attr name="android:maxLength" />
+        <attr name="glev_show_password_ic" format="boolean" />
+        <attr name="glev_change_under_line" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GcbSearchView">
+        <attr name="sv_hint" format="string" />
+        <attr name="sv_right_text" format="string" />
+        <attr name="sv_right_img" format="reference" />
+        <attr name="sv_show_message" format="boolean" />
+        <attr name="sv_show_cancel" format="boolean" />
+        <attr name="sv_editable" format="boolean" />
+        <attr name="android:imeOptions" />
+    </declare-styleable>
+
+    <declare-styleable name="GcbSubTitleView">
+        <attr name="stv_title" format="string" />
+        <attr name="stv_right_text" format="string" />
+        <attr name="stv_left_img" format="reference" />
+    </declare-styleable>
+
+    <!-- 多状态布局容器 -->
+    <declare-styleable name="MultipleStatusView">
+        <attr name="loadingView" format="reference" />
+        <attr name="errorView" format="reference" />
+        <attr name="emptyView" format="reference" />
+        <attr name="noNetworkView" format="reference" />
+        <attr name="contentView" format="reference" />
+    </declare-styleable>
+
+    <!-- 个人中心-条目 图标+文字 -->
+    <declare-styleable name="GcbMeFragmentItemTextView">
+        <attr name="gmfitv_title" format="string" />
+        <attr name="gmfitv_img" format="reference" />
+    </declare-styleable>
+
+
+    <!-- 设置单行信息条目 -->
+    <declare-styleable name="GcbSimpleInfoTextView">
+        <attr name="gsitv_text" format="string" />
+        <attr name="gsitv_sub_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="GcbFindOrderEditView">
+        <attr name="gfoev_left_text" format="string" />
+        <attr name="android:hint" />
+        <attr name="android:inputType" />
+        <attr name="gfoev_right_img" format="reference" />
+        <attr name="gfoev_show_currency" format="boolean" />
+        <attr name="gfoev_edit_enable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GcbSettingItemTextView">
+        <attr name="gseitv_text" format="string" />
+        <attr name="gseitv_sub_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="GcbPaymentMethodItem">
+        <attr name="gpm_left_img" format="reference" />
+        <attr name="gpm_text" format="string" />
+        <attr name="gpm_sub_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="GcbPaymentMethodEditView">
+        <attr name="gpmev_title_text" format="string" />
+        <attr name="android:hint" />
+
+    </declare-styleable>
+
+    <declare-styleable name="GcbGoBuyView">
+        <attr name="ggbv_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <style name="date_picker_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/date_picker_bg</item>
+    </style>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#888" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_home"
+            android:gravity="center"
+            android:text="@string/main_bottom_tab_home"
+            android:textColor="@color/grey333333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_store"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_store"
+            android:gravity="center"
+            android:text="@string/main_bottom_tab_store"
+            android:textColor="@color/grey333333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_discover"
+            android:gravity="center"
+            android:text="@string/main_bottom_tab_discover"
+            android:textColor="@color/grey333333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_me"
+            android:gravity="center"
+            android:text="@string/main_bottom_tab_me"
+            android:textColor="@color/grey333333"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

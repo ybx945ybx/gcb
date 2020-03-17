@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <ProgressBar
+        android:id="@+id/progress_webpage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:alpha="0.8"
+        android:max="100"
+        android:progressDrawable="@drawable/bg_progress_bar"
+        android:visibility="visible" />
+
+    <!--去购买中转页-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clyt_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llyt_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/redFDF1EE"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintDimensionRatio="375:232"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.gocashback.lib_common.widget.GcbImageView
+                android:id="@+id/iv_store"
+                android:layout_width="123dp"
+                android:layout_height="123dp"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="#d7d0d0"
+                fresco:roundingBorderWidth="0.5dp" />
+
+            <TextView
+                android:id="@+id/tv_rebate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/redFF4E4E"
+                android:textSize="16sp"
+                tools:text="返利 5.0%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/go_buy_tricking"
+                android:textColor="@color/grey333333"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/greyEFEFEF"
+            android:paddingStart="30dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/grey3C3C3C"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llyt_top"
+            tools:text="SFLING73WEV3200" />
+
+        <TextView
+            android:id="@+id/tv_code_copied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/go_buy_code_copied"
+            android:textColor="@color/redFF4E4E"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_code" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:src="@mipmap/ic_go_buy_how_left"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_go_buy_how_to"
+            app:layout_constraintEnd_toStartOf="@+id/tv_go_buy_how_to"
+            app:layout_constraintTop_toTopOf="@+id/tv_go_buy_how_to" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:src="@mipmap/ic_go_buy_how_right"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_go_buy_how_to"
+            app:layout_constraintStart_toEndOf="@+id/tv_go_buy_how_to"
+            app:layout_constraintTop_toTopOf="@+id/tv_go_buy_how_to" />
+
+        <TextView
+            android:id="@+id/tv_go_buy_how_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/go_buy_how_to"
+            android:textColor="@color/grey212121"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_tips"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:paddingStart="48dp"
+            android:paddingEnd="48dp"
+            android:paddingBottom="56dp"
+            android:text="@string/go_buy_how_to_tis"
+            android:textColor="@color/grey999999"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--<View-->
+        <!--style="@style/CommonTabUnderShadow"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />-->
+
+    </android.support.constraint.ConstraintLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+</LinearLayout>

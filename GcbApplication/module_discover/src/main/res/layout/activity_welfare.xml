@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/welfare_title"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <TextView
+        android:id="@+id/tv_title_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="36dp"
+        android:paddingStart="16dp"
+        android:text="@string/welfare_task_title"
+        android:textColor="@color/grey333333"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rycv_task"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="8dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_task">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_title_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:minHeight="36dp"
+        android:paddingStart="16dp"
+        android:text="@string/welfare_tips_title"
+        android:textColor="@color/grey333333"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/rycv_task" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@color/grey333333"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_tips" />
+
+    <TextView
+        android:id="@+id/tv_welfare_get"
+        style="@style/ButtonRectangleRed"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:enabled="false"
+        android:text="@string/welfare_get"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+        style="@style/CommonTabUnderShadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+</android.support.constraint.ConstraintLayout>

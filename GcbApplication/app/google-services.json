@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "265714281159",
+    "firebase_url": "https://gocashback-androidapplogin.firebaseio.com",
+    "project_id": "gocashback-androidapplogin",
+    "storage_bucket": "gocashback-androidapplogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265714281159:android:486b7af714f506eb",
+        "android_client_info": {
+          "package_name": "com.gocashbac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265714281159-op2mhjln8blmsi0o5hhop31g7ca6mjql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWIdt4YrtKlZ_ZqdVO2YJ-C3tMUwbNFfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265714281159-op2mhjln8blmsi0o5hhop31g7ca6mjql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265714281159:android:db32fd19dedd0b08",
+        "android_client_info": {
+          "package_name": "com.gocashback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265714281159-op2mhjln8blmsi0o5hhop31g7ca6mjql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWIdt4YrtKlZ_ZqdVO2YJ-C3tMUwbNFfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265714281159-op2mhjln8blmsi0o5hhop31g7ca6mjql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265714281159:android:a666f22fa7094b53",
+        "android_client_info": {
+          "package_name": "com.wwhtgocashback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265714281159-op2mhjln8blmsi0o5hhop31g7ca6mjql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWIdt4YrtKlZ_ZqdVO2YJ-C3tMUwbNFfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265714281159-op2mhjln8blmsi0o5hhop31g7ca6mjql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        applicationId "com.gocashback"
+        versionCode 196
+        versionName "1.9.6"
+        multiDexEnabled true //启用多dex打包
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("key/release.keystore")
+            storePassword "feinno"
+            keyAlias "feinno"
+            keyPassword "feinno"
+            v2SigningEnabled true
+        }
+
+        release {
+            storeFile file("key/release.keystore")
+            storePassword "feinno"
+            keyAlias "feinno"
+            keyPassword "feinno"
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 移除无用的resource文件
+            shrinkResources false
+            //Zipalign优化
+            zipAlignEnabled true
+            signingConfig signingConfigs.debug
+
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 移除无用的resource文件
+            shrinkResources true
+            //Zipalign优化
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+
+        }
+    }
+
+    flavorDimensions 'default'
+
+    productFlavors {
+        develop {
+            manifestPlaceholders = [
+                    app_name: "GoCashBack开发版",
+
+            ]
+        }
+
+        product {
+            manifestPlaceholders = [
+                    app_name: "GoCashBack",
+
+            ]
+        }
+    }
+
+    //移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions { //打包时排除的内容
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    kapt rootProject.ext.dependencies["arouter-compiler"]
+
+    implementation project(':module_home')
+    implementation project(':module_store')
+    implementation project(':module_discover')
+    implementation project(':module_me')
+    implementation project(':module_search')
+
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+}
+
+
+
+apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <com.gocashback.lib_common.widget.GcbImageView
+        android:id="@+id/iv_store_cover"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/stroke_grayeeeeee_corner_4" />
+
+    <TextView
+        android:id="@+id/tv_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/grey212121"
+        android:textSize="14sp"
+        tools:text="Eyeconic" />
+
+    <TextView
+        android:id="@+id/tv_store_cash_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/redFF4E4E"
+        android:textSize="14sp"
+        tools:text="15.0% cashback" />
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.gocashback.lib_common.widget.GcbHeadView
+        android:id="@+id/gcbHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hv_center_text="@string/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gocashback.lib_common.widget.GcbHeadView>
+
+    <!--支付方式-->
+    <com.gocashback.lib_common.widget.GcbSettingItemTextView
+        android:id="@+id/gseitv_payment_methods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gseitv_text="@string/settings_payment_methods"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView">
+
+    </com.gocashback.lib_common.widget.GcbSettingItemTextView>
+
+    <!--语言-->
+    <com.gocashback.lib_common.widget.GcbSettingItemTextView
+        android:id="@+id/gseitv_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gseitv_text="@string/settings_language"
+        app:layout_constraintTop_toBottomOf="@+id/gseitv_payment_methods">
+
+    </com.gocashback.lib_common.widget.GcbSettingItemTextView>
+
+    <!--切换语言按钮-->
+    <TextView
+        android:id="@+id/tv_cn"
+        android:layout_width="32dp"
+        android:layout_height="20dp"
+        android:textColor="@color/white"
+        android:text="CN"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/gseitv_language"
+        app:layout_constraintTop_toTopOf="@+id/gseitv_language"
+        app:layout_constraintEnd_toStartOf="@+id/tv_en"/>
+
+    <TextView
+        android:id="@+id/tv_en"
+        android:layout_width="32dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/redFF6E6E"
+        android:text="EN"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/gseitv_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gseitv_language" />
+
+    <!--更改密码-->
+    <com.gocashback.lib_common.widget.GcbSettingItemTextView
+        android:id="@+id/gseitv_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gseitv_text="@string/settings_change_password"
+        app:layout_constraintTop_toBottomOf="@+id/gseitv_language">
+
+    </com.gocashback.lib_common.widget.GcbSettingItemTextView>
+
+    <!--支付密码-->
+    <com.gocashback.lib_common.widget.GcbSettingItemTextView
+        android:id="@+id/gseitv_payment_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gseitv_text="@string/settings_payment_password"
+        app:layout_constraintTop_toBottomOf="@+id/gseitv_change_password">
+
+    </com.gocashback.lib_common.widget.GcbSettingItemTextView>
+
+    <!--绑定账号-->
+    <com.gocashback.lib_common.widget.GcbSettingItemTextView
+        android:id="@+id/gseitv_bind_on_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:gseitv_text="@string/settings_bind_on_account"
+        app:layout_constraintTop_toBottomOf="@+id/gseitv_payment_password">
+
+    </com.gocashback.lib_common.widget.GcbSettingItemTextView>
+
+    <!--接收推送-->
+    <com.gocashback.lib_common.widget.GcbSettingItemTextView
+        android:id="@+id/gseitv_push_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:gseitv_text="@string/settings_push_notifications"
+        app:layout_constraintTop_toBottomOf="@+id/gseitv_bind_on_account">
+
+    </com.gocashback.lib_common.widget.GcbSettingItemTextView>
+
+    <!--关于我们-->
+    <com.gocashback.lib_common.widget.GcbSettingItemTextView
+        android:id="@+id/gseitv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gseitv_text="@string/settings_about_us"
+        app:layout_constraintTop_toBottomOf="@+id/gseitv_push_notifications">
+
+    </com.gocashback.lib_common.widget.GcbSettingItemTextView>
+
+    <!--清除缓存-->
+    <com.gocashback.lib_common.widget.GcbSettingItemTextView
+        android:id="@+id/gseitv_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gseitv_text="@string/settings_clear_cache"
+        app:layout_constraintTop_toBottomOf="@+id/gseitv_about_us">
+
+    </com.gocashback.lib_common.widget.GcbSettingItemTextView>
+
+    <!--退出登录-->
+    <TextView
+        android:id="@+id/tv_logout"
+        style="@style/ButtonCornerRed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/settings_log_out"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/gseitv_clear_cache" />
+
+    <View
+        style="@style/CommonTabUnderShadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcbHeadView" />
+
+</android.support.constraint.ConstraintLayout>

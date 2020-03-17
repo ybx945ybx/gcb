@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/greyCCCCCC</item>
+        <!--<item name="android:windowAnimationStyle">@style/Animation.Activity</item>-->
+
+    </style>
+
+    <!-- Activity切换动画 -->
+    <style name="Animation.Activity" parent="@android:style/Animation.Activity">
+        <!-- 新Activity 进入 -->
+        <item name="android:activityOpenEnterAnimation">@anim/enter_next</item>
+        <!-- 旧Activity退出 -->
+        <item name="android:activityOpenExitAnimation">@anim/exit_next</item>
+    </style>
+
+    <!--通用标题栏底部阴影样式-->
+    <style name="CommonTabUnderShadow">
+        <item name="android:background">@drawable/bg_underline_show</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <!--按钮  方  红色FF4E4E-->
+    <style name="ButtonRectangleRed">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/sl_btn_rectangle_red</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--按钮  corner 4dp  红色FF4E4E-->
+    <style name="ButtonCornerRed">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/sl_btn_red</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--按钮  圆角  红色FF4E4E-->
+    <style name="ButtonCircleRed">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_redff4e4e_corner_circle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- MultipleStatusView -->
+    <style name="MSV_BG">
+        <item name="emptyView">@layout/layout_empty_view</item>
+        <item name="errorView">@layout/layout_error_view</item>
+        <item name="loadingView">@layout/layout_loading_view</item>
+    </style>
+
+    <!-- 分割线/左右16dp -->
+    <style name="Divider_List_E6E6E6_16dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/greyE6E6E6</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <!-- 分割线 -->
+    <style name="Divider_List_E6E6E6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/greyE6E6E6</item>
+    </style>
+
+    <!-- 我的 - item -->
+    <style name="me_fragment_item">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/grey333333</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

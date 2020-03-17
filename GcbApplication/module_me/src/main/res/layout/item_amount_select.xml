@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="36dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/sl_amount_select"
+    android:textSize="14sp"
+    android:textColor="@color/sl_redff4e4e_999999"
+    tools:text="200"
+    android:gravity="center"
+    android:id="@+id/tv_amount"/>
+
